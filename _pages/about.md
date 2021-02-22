@@ -16,10 +16,8 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am an Assistant Professor at IIT Hyderabad and my current research interests lie in the intersection of geometry, applied algebraic topology, topological data analysis (TDA) and machine Learning.
+I am an assistant professor in the Department of Computer Science and Engineering (CSE) at the Indian Institute of Technology, Hyderabad (IIT-H), where I head the क्रम (Krama) Lab. My research interests are geometric machine learning (graph and point-cloud representation learning), optimal transport (discrete OT and assignment problems) and applied algebraic topology (topological data analysis). My work involves developing practical machine learning algorithms with rigorous theoretical foundations. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Prior to my faculty position at IIT-H, I was a postdoctoral researcher at DIMA, Technische Universität (TU) Berlin, Germany, headed by Prof. Volker Markl, investigating scalable machine learning methods, especially, locality sensitive hashing (LSH). Before that I was a Ph.D. student in the Computer Science Department at Aarhus University, Denmark, where I was working on fast and approximate path-finding algorithms on massive 3D polyhedral meshes, under the guidance of Prof. Christian S. Jensen. Prior to that, I was a Masters student and researcher in the Uppsala database laboratory (UDBL) headed by Prof. Tore Risch at the Department of Information Technology  in Uppsala University, Sweden, where I investigated the near-future prediction of continuously evolving moving-object trajectories.   
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Further information about how to join us at the क्रम (Krama) Lab can be found [here](https://T0kudai.github.io).
