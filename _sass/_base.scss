@@ -1,6 +1,58 @@
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+//news class
+
+// .news{
+//   font-size: 15px !important;
+// }
+
+//tewwt icon position
+.tweeticon{
+
+  position: fixed;
+  top:0px;
+  margin-left: -50px;
+}
+//icon ize
+
+.iconsize{
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.hover:hover{
+  background-color: yellow;
+}
+
+ //  navigation panel image
+
+.navimage {
+  border-radius:100%;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+ // align image of about page
+
+ .floated{
+  float: left;
+
+  // width: 600px;
+}
+
+.mainimage{
+  height: 230px !important;
+  margin-right : 20px !important;
+}
+
+//twitter-timeline
+
+.tweet{
+  overflow-x:scroll;
+  height:80vh;
+}
 
 // Typography
 
@@ -156,14 +208,24 @@ a, table.table a {
 
 // News
 
-.news table td {
-  font-size: 1rem;
+td {
+  font-size: 1.5rem !important;
   color: var(--global-text-color);
 }
 
-.news table th {
+// .news table td {
+//   font-size: 1rem !important;
+//   color: var(--global-text-color);
+// }
+
+th {
+  font-size: 1.5rem !important;
   color: var(--global-text-color);
 }
+// .news table th {
+//   font-size: 1rem !important;
+//   color: var(--global-text-color);
+// }
 
 // Social (bottom)
 

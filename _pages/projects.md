@@ -4,6 +4,10 @@ title: projects
 permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
+
+profile:
+  align: right
+  image: prof_pic.jpg
 ---
 
 <div class="projects grid">

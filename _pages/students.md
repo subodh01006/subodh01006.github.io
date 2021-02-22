@@ -4,6 +4,9 @@ permalink: /students/
 title: students
 description: Current students and alumni
 nav: true
+profile:
+  align: right
+  image: prof_pic.jpg
 ---
 ## current students
 
