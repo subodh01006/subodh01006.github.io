@@ -1,0 +1,8 @@
+@inproceedings{manohar,
+full_name={Manohar Kaul},
+bio={'<p align="justify">
+Dr Manohar Kaul is an assistant professor in the <a href="https://cse.iith.ac.in/" target="_blank">Department of Computer Science and Engineering (CSE)</a> at the <a href="https://iith.ac.in/" target="_blank">Indian Institute of Technology, Hyderabad (IIT-H)</a>, where he heads the क्रम (Krama) Lab. His research interests are geometric machine learning (graph and point-cloud representation learning), optimal transport (discrete OT and assignment problems) and applied algebraic topology (topological data analysis). His work involves developing practical machine learning algorithms with rigorous theoretical foundations. 
+</p>' },
+image={/assets/img/IIT Hyderabad Logo.jpg},
+year = {Manohar Kaul}
+}

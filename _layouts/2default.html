@@ -1,0 +1,78 @@
+<html class=" js no-touch csstransitions js_active  vc_desktop  vc_transform  vc_transform  vc_transform " lang="en-US"><head>
+	<head>
+        <meta charset="UTF-8">
+        <title>Manohar Kaul – Assistant Professor, Department of Computer Science and Engineering</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+        <link rel="stylesheet" id="bootstrap-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css" media="all">
+        <link rel="stylesheet" id="faculty-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/style.css?ver=1.5.1" type="text/css" media="">  <!-- make side panel-->
+        <link rel="stylesheet" id="xr-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css" media="all">  <!--make yellow hover --> 
+     
+    </head>
+    
+<body class="home page-template-page-pagebuilder-php page page-id-10 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+    <div id="wrapper">
+        <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
+        <div id="sidebar" style="left: 0px;">
+            <div id="sidebar-wrapper" style="overflow-y: hidden; outline: currentcolor none medium;" tabindex="0">
+                <div id="sidebar-inner">
+                    <!-- Profile/logo section-->
+                    <div id="profile" class="clearfix">
+                        <div id="profile" class="clearfix">
+                            <a href=""><img src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}" alt="Manohar Kaul" style="border-radius: 100px;width: 170px;height: 170px;"></a>
+                        </div>
+                        <div class="title">
+                            <h2 style="margin-top:-20px;">Manohar Kaul</h2>
+                            <h3 style="margin-top:-10px;">Assistant Professor, <a href="https://cse.iith.ac.in/">Department of Computer Science and Engineering</a>, <a href="https://iith.ac.in/" >IIT</a></h3>
+                        </div>
+                    </div>
+                    <!-- /Profile/logo section-->
+                    <!-- Main navigation-->
+                    <div id="main-nav" style="padding-bottom: 118px;">
+                        <ul id="navigation" class="">
+                            <li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-470" base-menu="1"><a href="{{ '/' | relative_url }}"><i class="fa fa-home iconsize" aria-hidden="true"></i>  Home</a></li>
+                            <li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="{{ site.baseurl }}{% link _pages/publications.md %}"><i class="fa fa-mortar-board"></i> Publications</a></li>
+                            <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="{{ site.baseurl }}{% link _pages/projects.md %}"><i class="fa fa-send-o"></i> Projects</a></li>
+                            <li id="menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-506"><a href="{{ site.baseurl }}{% link _pages/talks.md %}"><i class="fa fa-video-camera"></i> Talks</a></li>
+                            <li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-509"><a href="{{ site.baseurl }}{% link _pages/students.md %}"><i class="fa fa-folder-open-o"></i> Resources</a></li>
+                            <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="{{ site.baseurl }}{% link _pages/teaching.md %}"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Teachings</a></li>            
+                        </ul>
+                    </div>
+                    <!-- /Main navigation-->
+
+                    <!--Sidebar footer-->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a target="_blank" href="https://scholar.google.com/"><i class="ai ai-google-scholar-square ai-3x"></i></a></li>                        
+                            <li><a target="_blank" href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar footer -->
+
+                    <div id="copyright">Copyright © Manohar Kaul
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+            
+        <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
+            <div id="inside">
+                {{content}}
+            </div>
+            <!-- Footer -->
+            <div style="background-color:chartreuse">
+                {% include footer.html %}
+            </div>  
+        </div>
+    </div>
+    <!-- Footer -->
+    <!-- {% include footer.html %} -->
+    
+    
+</body>
+
+</html>

@@ -1,43 +1,33 @@
 ---
-layout: page
+layout: bio
 permalink: /students/
-title: students
+title: Team
 description: Current students and alumni
+teams: [Manohar Kaul,Charu Sharma, Anson Simon Bastos, Akshita Parekh, Subodh Nigam, Vishal Singh Yadav, Jatin Chauhan, Deepak Nathani, Nikhil P. Kumaar, Pratik Shukla, Varun Mishra]
 nav: true
+
 profile:
   align: right
   image: prof_pic.jpg
 ---
-## current students
+<style >
+.year{
+color: #4b4b4b;
+font-size: 30px;
+border-bottom: 1px solid #ccc;
+margin: 0 0 30px 0;
+padding: 20px 0;
+text-align: left;
+font-family: "Lato", Helvetica, Arial, sans-serif;
+font-weight: 300;
+}
 
----
+</style>
+<div class="resources">
 
-##### PhDs
+{% for name in page.teams %}
+  <h2 class="year">{{name}}</h2>
+  {% bibliography -f resources -q @*[full_name={{name}}]*  %}
+{% endfor %}
 
-- [Charu Sharma](https://sites.google.com/site/charusharmacseiith/)
-- Anson Bastos (part - time)
-- Akshita Parekh (part - time)
-
-##### Masters
-
-##### Bachelors with co-authored papers
-
-* Jatin Chauhan (in progress)
-
-<br/>
-
-## alumni
-
----
-
-##### PhDs
-
-##### Masters
-
-- Nikhil P. Kumaar (@ NVIDIA), Thesis: "Scene Graph Generation"
-- Varun Mishra (@ Flikart), Thesis: "Document Simplicial Complexes"
-- Pratik Shukla (@ Qualcomm), Thesis: "Text Clustering using Graph Kernels"
-
-##### Bachelors with co-authored papers
-
-- [Deepak Nathani](https://deepakn97.github.io/) (@ Google Research, Bangalore)
+</div>
