@@ -11,14 +11,16 @@ profile:
 ---
 <style>
   td{
-    padding-right: 20px;
+    padding-right: 15px;
     padding:5px;
   }
   th{
-    background: #222729;
+    background: #A0A0A0;
     color: #fff;
     text-align: left;
     box-sizing: border-box;
+    padding:10px;
+    
 
   }
   tr{
@@ -27,6 +29,7 @@ profile:
     border: 0;
     font: inherit;
     vertical-align: baseline;
+    border-radius: 5px;
   }
   thead{
     background: #444;
@@ -44,7 +47,7 @@ profile:
 <table>
     <thead>
       <tr>
-        <th>CS3550</th>
+        <th >CS3550  </th>
         <th>Introduction to Database Management Systems</th>
       </tr>
     </thead>
@@ -52,7 +55,7 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
@@ -62,7 +65,7 @@ profile:
   
     <thead>
       <tr>
-        <th>CS3563</th>
+        <th>CS3563 </th>
         <th>Database Management Systems (with Lab)</th>
       </tr>
     </thead>
@@ -70,7 +73,7 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 3</li>
+            <!-- <li><strong>Credits:</strong> 3</li> -->
             <!-- <li><strong>Pre Requisites:</strong> Introduction to Database Management Systems, Introduction to Database Management Systems Lab</li> -->
           </ul>
         </td>
@@ -79,7 +82,7 @@ profile:
     </tbody>
     <thead>
       <tr>
-        <th>CS5710</th>
+        <th>CS5710 </th>
         <th>Computational Topology: Theory and Applications</th>
       </tr>
     </thead>
@@ -87,16 +90,16 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 3</li>
+            <!-- <li><strong>Credits:</strong> 3</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
     <thead>
       <tr>
-        <th>CS3035</th>
+        <th>CS3035 </th>
         <th>Mini Project</th>
       </tr>
     </thead>
@@ -104,16 +107,16 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
       <thead>
       <tr>
-        <th>CS2305</th>
+        <th>CS2305  </th>
         <th>Research Internship</th>
       </tr>
     </thead>
@@ -121,11 +124,11 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
        <thead>
@@ -138,11 +141,11 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
        <thead>
@@ -155,11 +158,11 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
     <thead>
@@ -172,11 +175,11 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
     <thead>
@@ -189,11 +192,11 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
     <thead>
@@ -206,7 +209,7 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
@@ -223,7 +226,7 @@ profile:
       <tr>
         <td>
           <ul>
-            <li><strong>Credits:</strong> 1</li>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
