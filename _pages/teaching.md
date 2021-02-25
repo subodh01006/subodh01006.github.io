@@ -53,7 +53,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -71,7 +71,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 3</li>
-            <li><strong>Pre Requisites:</strong> Introduction to Database Management Systems, Introduction to Database Management Systems Lab</li>
+            <!-- <li><strong>Pre Requisites:</strong> Introduction to Database Management Systems, Introduction to Database Management Systems Lab</li> -->
           </ul>
         </td>
         <td><p>Advanced SQL (procedures/functions/triggers), Database design and normal forms, Database application development, Storage structures and indexing/hashing, Query processing and optimization, Transactions, Lock-based concurrency control.</p></td>
@@ -88,7 +88,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 3</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -105,7 +105,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -122,7 +122,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -139,7 +139,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -156,7 +156,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -173,7 +173,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -190,7 +190,7 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
         <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
@@ -207,10 +207,10 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
     <thead>
@@ -224,10 +224,10 @@ profile:
         <td>
           <ul>
             <li><strong>Credits:</strong> 1</li>
-            <li><strong>Pre Requisites:</strong> NONE</li>
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td>
+        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
 </table>
