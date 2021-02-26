@@ -110,7 +110,7 @@
     <a href="javascript:void(0)" onclick="togg({{entry.id}})" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Abstract]</a>
     
       <a href="javascript:void(0)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
-      <div class="hide" id="{{entry.id}}">{{entry.abstract}}</div>
+      <div class="hide" id="{{entry.id}}" style="font-weight:bold">{{entry.abstract}}</div>
       {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
