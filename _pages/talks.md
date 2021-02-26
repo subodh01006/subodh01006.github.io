@@ -23,6 +23,14 @@ font-weight: 300;
 }
 
 </style>
+<!-- <div class="slp__liveNotStarted" data-slp-target="liveThumbnail" style="background-image: url(&quot;https://d2ygwrecguqg66.cloudfront.net/data/presentations/38938281/slideslive_charu-sharma_deepak-nathani_manohar-kaul_solving-partial-assignment-problems-using-random-simplicial-complexes.jpg?1606758741&quot;);">
+    <div class="slp__liveNotStartedTitle__gradient"></div>
+    <div class="slp__liveNotStartedTitle">
+      <div class="slp__liveNotStartedTitle__logo"></div>
+      <div class="slp__liveNotStartedTitle__text" data-slp-localized="liveStartSoon">Livestream will start soon!</div>
+    </div>
+  </div>
+   -->
 <div class="publications">
 
 {% for y in page.years %}

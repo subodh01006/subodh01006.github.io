@@ -1,5 +1,19 @@
 ---
 ---
+<style>
+  .button5 {
+  background-color: rgb(223, 217, 217);
+  color: black;
+  border: 1px solid #555555;
+  border-radius: 15px;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+</style>
 
 <div class="row">
   <div class="col-sm-2 abbr">
@@ -16,7 +30,8 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title">{{entry.title}}</div>
+      <div class="title"><a href="{{ entry.pdf }}" target="_blank">{{entry.title}}</a></div>
+      <div class="venue"><a href="" target="_blank">{{entry.journal}}</a>, <em>{{entry.year}}</em></div>
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
@@ -81,7 +96,7 @@
 
     <div class="links">
     {% if entry.abstract %}
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="abstract btn btn-sm z-depth-0 button button5" role="button">Abstract</a>
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
@@ -89,13 +104,13 @@
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     {% endif %}
-    {% if entry.pdf %}
+    <!-- {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
-      <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      <a href="{{ entry.pdf | relative_url}}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
-    {% endif %}
+    {% endif %} -->
     {% if entry.supp %}
       {% if entry.supp contains '://' %}
       <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Supp</a>

@@ -40,11 +40,30 @@ profile:
     max-width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
+    margin-left: -60;
+    margin-top: 40px;
   }
 </style>
 <div class="publications">
 <div class="container" style="width:1200px;margin-left: auto;margin-right: auto;font-size: 16px;">
 <table>
+    <thead>
+      <tr>
+        <th>ID1303</th>
+        <th>Introduction to Programming</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <!-- <li><strong>Credits:</strong> 1</li> -->
+            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
+          </ul>
+        </td>
+        <td><p>Introduction to C and C++ programming. Problem solving and algorithms. Input and output operations, decision control structure, loop control structure, arrays, strings, etc. Pointers, arrays, structures, functions, file operations, classes, object oriented programming. Lab is also included in this course.</p></td>
+      </tr>
+    </tbody>
     <thead>
       <tr>
         <th >CS3550  </th>
@@ -94,9 +113,10 @@ profile:
             <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
           </ul>
         </td>
-        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
+        <td><p>Basics of group theory (Abelian groups, Group actions), Simplicial Complexes, Homology and computation using matrix reduction method, Persistent Homology.</p></td>
       </tr>
     </tbody>
+
     <thead>
       <tr>
         <th>CS3035 </th>
@@ -165,23 +185,7 @@ profile:
         <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
       </tr>
     </tbody>
-    <thead>
-      <tr>
-        <th>ID1303</th>
-        <th>Introduction to Programming</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <ul>
-            <!-- <li><strong>Credits:</strong> 1</li> -->
-            <!-- <li><strong>Pre Requisites:</strong> NONE</li> -->
-          </ul>
-        </td>
-        <!-- <td><p>Purpose and evolution of database management systems, Relational model of data, Formal relational languages (relational algebra/calculus), SQL, Introduction to database design</p></td> -->
-      </tr>
-    </tbody>
+    
     <thead>
       <tr>
         <th>CS3011</th>
