@@ -12,8 +12,19 @@
   background-color: #555555;
   color: white;
 }
-
+.hide{
+  display: none;
+}
+.show{
+  display: block !important;
+}
 </style>
+<script>
+  function togg(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("show");
+  }
+</script>
 
 <div class="row">
   <div class="col-sm-2 abbr">
@@ -96,8 +107,11 @@
 
     <div class="links">
     {% if entry.abstract %}
-      <a class="abstract btn btn-sm z-depth-0 button button5" role="button">Abstract</a>
-    {% endif %}
+    <a href="javascript:void(0)" onclick="togg({{entry.id}})" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Abstract]</a>
+    
+      <a href="javascript:void(0)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
+      <div class="hide" id="{{entry.id}}">{{entry.abstract}}</div>
+      {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
     {% endif %}
