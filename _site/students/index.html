@@ -1,259 +1,138 @@
-<html class=" js no-touch csstransitions js_active  vc_desktop  vc_transform  vc_transform  vc_transform " lang="en-US"><head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1"><script type="text/javascript" src="https://bam-cell.nr-data.net/1/ab0374a39e?a=59283402&amp;v=1198.fe6ec20&amp;to=Z1QGZBZQVkNYU0YNWV4eJVMQWFdeFkBTA1MdQQVXAVNNWVVUVxY%3D&amp;rst=3596&amp;ck=1&amp;ref=https://lucacarlone.mit.edu/&amp;ap=210&amp;be=1727&amp;fe=3275&amp;dc=2703&amp;perf=%7B%22timing%22:%7B%22of%22:1614012602755,%22n%22:0,%22f%22:0,%22dn%22:33,%22dne%22:56,%22c%22:56,%22s%22:320,%22ce%22:1101,%22rq%22:1101,%22rp%22:1571,%22rpe%22:1574,%22dl%22:1718,%22di%22:2698,%22ds%22:2703,%22de%22:2713,%22dc%22:3273,%22l%22:3273,%22le%22:3276%7D,%22navigation%22:%7B%7D%7D&amp;fcp=2270&amp;at=SxMFEl5KRU0%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1198.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ab0374a39e",applicationID:"59283402"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <title>Manohar Kaul – Assistant Professor, Department of Computer Science and Engineering</title>
-<link rel="dns-prefetch" href="//platform.twitter.com">
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
-<link rel="stylesheet" id="font-awesome-four-css" href="https://lucacarlone.mit.edu/wp-content/plugins/font-awesome-4-menus/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="faculty-lato-css" href="https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C100italic%2C300italic%2C400italic&amp;ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="magnific-pupup-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/magnific-popup.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="faculty-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/style.css?ver=1.5.1" type="text/css" media="">
-<link rel="stylesheet" id="faculty-custom-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/styles/default.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="owl_acadmicons-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/academicons.css?ver=1.6.0" type="text/css" media="all">
-<link rel="stylesheet" id="xr-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://lucacarlone.mit.edu/wp-content/plugins/tablepress/css/default.min.css?ver=1.12" type="text/css" media="all">
-<link rel="stylesheet" id="js_composer_front-css" href="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1" type="text/css" media="all">
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/papercite/js/papercite.js?ver=5.5.3" id="papercite-js"></script>
-<script type="text/javascript" id="monsterinsights-frontend-script-js-extra"></script>
+<html>
 
-<style id="fac_custom_options">
-		#blog-content,
-		#archive-content,
-		.fac-page,.home{
-			overflow:auto;
-			overflow-x:hidden;
-		}
-	ul#navigation > li.external:hover a .fa,
-	ul#navigation > li.current-menu-item > a .fa,
-	ul#navigation > li.current-menu-parent > a .fa,
-	.cd-active.cd-dropdown > span
-	{
-		color:#03cc85;
-	}
-	ul.ul-dates div.dates span,
-	ul.ul-card li .dy .degree,
-	ul.timeline li .date,
-	#labp-heads-wrap,
-	.labp-heads-wrap,
-	.ul-withdetails li .imageoverlay,
-	.cd-active.cd-dropdown ul li span:hover,
-	.pubmain .pubassets a.pubcollapse,
-	.pitems .pubmain .pubassets a:hover,
-	.pitems .pubmain .pubassets a:focus,
-	.pitems .pubmain .pubassets a.pubcollapse,
-	.commentlist .reply
-	{
-		background-color: #03cc85;
-	}
-	.ul-boxed li,
-	ul.timeline li .data,.widget ul li,
-	.fac-pagination{
-		border-left-color:#03cc85;
-	}
-	#labp-heads-wrap:after{
-		border-top-color: #03cc85;
-	}
-	ul.ul-dates div.dates span:last-child,
-	ul.ul-card li .dy .year,
-	ul.timeline li.open .circle{
-		background-color: #03bb7a;
-	}
-	ul.timeline li.open .data {
-		border-left-color: #03bb7a;
-	}
-	.pitems .pubmain .pubassets {
-		border-top-color: #03bb7a;
-	}
+<head>
+    <meta charset="UTF-8">
 
-	ul#navigation > li:hover,
-	ul#navigation > li:focus,
-	ul#navigation > li.current-menu-item,
-	ul#navigation > li.current-menu-parent {
-		background-color: #363636;
-		border-top: 1px solid #373737;
-		border-bottom: 1px solid #2B2B2B;
-	}
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
 
-	ul#navigation > li {
-		background-color: #303030;
-		border-top: 1px solid #373737;
-		border-bottom: 1px solid #2B2B2B;
-	}
+    <title>Manohar Kaul – Assistant Professor, Department of Computer Science and Engineering, IITH</title>
+    <link rel="stylesheet" id="xr-styles-css"
+        href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="js_composer_front-css"
+        href="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="shortcut icon" href="#">
 
+    <style id="fac_custom_options">
+        #blog-content,
+        #archive-content,
+        .fac-page,
+        .home {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+    </style>
 
+<body>
 
-	.fac-page #inside >.wpb_row:first-child:before {
-		border-top-color: #f3f3f3;
-	}
-	.fac-page #inside >.wpb_row:nth-child(odd),
-	.fac-page .section:nth-child(odd){
-		background-color: #f7f7f7;
-	}
-	.fac-page #inside >.wpb_row:nth-child(even),
-	.fac-page .section:nth-child(even){
-		background-color: #fcfcfc;
-	}
-	.fac-page #inside >.wpb_row:first-child,
-	.pageheader {
-		background-color: #f3f3f3;
-	}
-	.fac-page #inside >.wpb_row:first-child:before,
-	.pageheader:after {
-		border-top-color: #f3f3f3;
-	}
+    <div id="wrapper">
+        <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars" style="color:white;"></i></a>
+        <div id="sidebar" style="left: 0px;">
+            <div id="sidebar-wrapper" tabindex="0">
+                <div id="sidebar-inner">
+                    <!-- Profile/logo section-->
+                    <div id="profile" class="clearfix">
+                        <div class="portrate">
+                            <img src="/assets/img/prof_pic.jpg" alt="Manohar Kaul">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <h2>Manohar Kaul</h2>
+                            <h3>Assistant Professor, <a style="color:cornflowerblue" href="https://cse.iith.ac.in/"
+                                    target="blank">Department of Computer Science and Engineering</a>, <a
+                                    style="color:cornflowerblue" href="https://iith.ac.in/" target="blank">IIT</a></h3>
+                        </div>
+                    </div>
+                    <!-- /Profile/logo section-->
 
-	#sidebar,
-	ul#navigation .sub-menu {
-		background-color: #2b2b2b;
-	}
+                    <!-- Main navigation-->
+                    <div id="main-nav" style="padding-bottom: 118px;">
 
-	#sidebar-footer{
-		background-color: #202020;
-		}
+                        <ul id="navigation" class="">
+                            <li id="" class="" base-menu="1"><a href="/"><i
+                                        class="fa fa-home iconsize" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Home</div>
+                                </a></li>
+                            <li id="" class=""><a href="/publications/"><i
+                                        class="fa fa-mortar-board" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Publications</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-trophy" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Awards/Honours</div>
+                                </a></li>
+                            <li id="" class=""><a href="/talks/"><i
+                                        class="fa fa-video-camera" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Talks</div>
+                                </a></li>
+                            <li id="" class=""><a href="/teaching/"><i
+                                        class="fa fa-newspaper-o" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Teaching</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-briefcase" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Service</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-forward" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Visiting Positions</div>
+                                </a></li>
+                            <li id="" class=""><a href="https://t0kudai.github.io/" target="blank"><i class="fa fa-user"
+                                        style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">क्रम (Krama) Lab</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <!-- /Main navigation-->
 
-	#gallery-header{
-		background-color: #2c2c2d;
-	}
-	#gallery-large{
-		background-color: #303030;
-	}
-	ul.ul-card li,
-	ul.timeline li .data,
-	.ul-boxed li,
-	.ul-withdetails li,
-	.pitems .pubmain,
-	.commentlist li{
-		background-color: #f5f5f5;
-	}
+                    <!--Sidebar footer-->
+                    <!-- Sidebar footer -->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/" target="blank"><i
+                                        class="fa fa-linkedin" style="font-size: 2em;"></i></a></li>
+                            <li><a target="_blank" href="https://scholar.google.com/" target="blank"><i
+                                        class="ai ai-google-scholar" style="font-size: 2em;"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/" target="blank"><i class="fa fa-github"
+                                        style="font-size: 2em;"></i></a></li>
+                        </ul>
+                    </div>
 
-	ul.timeline li.open .data,
-	.ul-withdetails li .details,
-	#lab-details,
-	.pitems .pubdetails,
-	.commentlist .comment-author-admin{
-		background-color: #fff;
-	}
-	a#hideshow,#hideshow i{
-		color: #FFED52;
-	}
-	.archive-header{
-		background-color: #2b2b2b;
-		/* color: ; */
-	}
-
-	#profile .title h2{
-		font-size: 28px;
-	}
-	#profile .title h3{
-		font-size: 18px;
-	}
-	ul#navigation > li > a{
-		font-size: 14px;
-	}
-	body{
-		font-size: 16px;
-	}
-	.fac-big-title{
-		font-size: 50px;
-	}
-	.headercontent .title{
-		font-size: 50px;
-	}
-	.fac-title, .fac-big-title, .headercontent .title{
-		color: #333333;
-	}
-	</style><!-- Global Site Tag (gtag.js) - Google Analytics -->
-
-
-<link rel="icon" type="image/png" href="/assets/img/IIT Hyderabad Logo.jpg">
-
-	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Luca Carlone"><meta name="twitter:site" content="@lucacarlone1"><meta name="twitter:description" content="Assistant Professor, Department of Aeronautics and Astronautics">
-
-<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1512240842733{margin-bottom: 0px !important;background-color: #ffffff !important;}.vc_custom_1512242800426{background-color: #e5e5e5 !important;}.vc_custom_1587256579297{background-color: #ffffff !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<script charset="utf-8" src="https://platform.twitter.com/js/button.cf7aaea83eb75b84ae4508f0ceb5dc4c.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.01dc90aad711d9816ce427578e2064b6.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.217a220423d55b36c29099c89d1abb2d.js"></script></head>
-	
-	<body class="home page-template page-template-page-pagebuilder page-template-page-pagebuilder-php page page-id-10 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
-	
-        <div id="wrapper">
-            <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
-
-<div id="sidebar" style="left: 0px;">
-    <div id="sidebar-wrapper" style="overflow-y: hidden; outline: currentcolor none medium;" tabindex="0">
-        <div id="sidebar-inner">
-          <!-- Profile/logo section-->
-          <div id="profile" class="clearfix">
-              <div class="portrate">
-                <a href="">
-                  <img src="/assets/img/prof_pic.jpg" alt="Manohar Kaul">
-                </a>
-              </div>
-              <div class="title">
-                  <h2>Manohar Kaul</h2>
-                  <h3>Assistant Professor, <a href="https://cse.iith.ac.in/">Department of Computer Science and Engineering</a>, <a href="https://iith.ac.in/" >IIT</a></h3>
-              </div>   
-          </div>
-          <!-- /Profile/logo section-->
-
-          <!-- Main navigation-->
-          <div id="main-nav" style="padding-bottom: 118px;">
-              <ul id="navigation" class="">
-                <li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-470" base-menu="1"><a href="/"><i class="fa fa-home iconsize" aria-hidden="true"></i>  Home</a></li>
-                <li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="/publications/"><i class="fa fa-mortar-board"></i> Publications</a></li>
-				<!-- <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="/projects/"><i class="fa fa-send-o"></i> Projects</a></li> -->
-
-                <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href=""><i class="fa fa-trophy"></i> Awards/Honours</a></li>
-                <li id="menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-506"><a href="/talks/"><i class="fa fa-video-camera"></i> Talks</a></li>
-                <!-- <li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-509"><a href="/students/"><i class="fa fa fa-users"></i> Team</a></li> -->
-                <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="/teaching/"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Teaching</a></li>
-				<li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i>Service</a></li>
-                <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href=""><i class="fa fa-forward" aria-hidden="true"></i>Visiting Positions</a></li>
-
-                <li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="https://t0kudai.github.io/"><i class="fa fa-user" aria-hidden="true"></i> Krama Lab</a></li>
-
-              </ul>          
-          </div>
-          <!-- /Main navigation-->
-
-          <!--Sidebar footer-->
-           <!-- Sidebar footer -->
-    <div class="social-icons">
-        <ul>
-            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a target="_blank" href="https://scholar.google.com/"><i class="ai ai-google-scholar-square ai-3x"></i></a></li>                        
-            <li><a target="_blank" href="https://github.com/"><i class="fa fa-github"></i></a></li>
-        </ul>
-    </div> 
-    <!-- social icon -->
-    
-    <div id="copyright">Copyright © Manohar Kaul</div>
-    
-</div>
- <!-- /Sidebar footer -->           <!--Sidebar footer-->
+                    <div id="copyright">Copyright © Manohar Kaul</div>
+                </div>
+            </div>
         </div>
 
+        <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
+            style="width: 6px; z-index: auto; cursor: default; position: absolute; top: 0px; left: 244px; height: 507px; touch-action: none; display: block; opacity: 0;">
+            <div style="position: relative; top: 170px; float: right; width: 6px; height: 337px; background-color: rgb(170, 170, 170); border: medium none; background-clip: padding-box; border-radius: 0px; touch-action: none;"
+                class="nicescroll-cursors"></div>
+        </div>
     </div>
-
-<div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: auto; cursor: default; position: absolute; top: 0px; left: 244px; height: 507px; touch-action: none; display: block; opacity: 0;"><div style="position: relative; top: 170px; float: right; width: 6px; height: 337px; background-color: rgb(170, 170, 170); border: medium none; background-clip: padding-box; border-radius: 0px; touch-action: none;" class="nicescroll-cursors"></div></div></div>
-            <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
-    
-	<div class="fac-page home">
-		<div id="inside">
-				
-<!-- <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.6e189c4f2b6d88c453045806323cdcf3.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=https%3A%2F%2Flucacarlone.mit.edu%2F&amp;partner=tfwp&amp;size=m&amp;text=Luca%20Carlone%20%E2%80%93%20Assistant%20Professor%2C%20Department%20of%20Aeronautics%20and%20Astronautics&amp;time=1614012606305&amp;type=share&amp;url=https%3A%2F%2Flucacarlone.mit.edu%2F&amp;via=lucacarlone1" data-url="https://lucacarlone.mit.edu/" frameborder="0"></iframe></div> -->
-<!-- <div class="vc_row wpb_row vc_row-fluid vc_custom_1512240842733 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
-	<!-- <div class="wpb_text_column wpb_content_element ">  -->
-	  <!-- <div class="wpb_wrapper"> -->
-			<div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
+    <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
+        <div class="fac-page home" style="background-color:#f7f7f7">
+            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank"
+                    class="twitter-share-button">Tweet</a></div>-->
+            <div id="inside">
+                <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true"
+                        allowfullscreen="true"
+                        class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                        style="position: static; visibility: visible; width: 60px; height:0px;"
+                        title="Twitter Tweet Button" src="" frameborder="0"></iframe></div>
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1512240842733 vc_row-has-fill">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner ">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper" style="margin-left: -110px;">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper"
+                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px; ">
+                                                        <p>
+                                                            <!-- <img loading="lazy" class="alignleft wp-image-876" src="/assets/img/mkaul_corpped_.jpg" alt="" sizes="(max-width: 250px) 100vw, 250px" width="230" height="300"> -->
+                                                            <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
 <div class="post" style="margin-left:50px;">
   <div style="margin:50px;">
   <header class="post-header">
@@ -377,41 +256,18 @@
 </body>
 </html>
 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-		 <!-- </div>  -->
-   
-	<!-- </div> -->
-<!-- </div> -->
-<!-- </div></div></div></div></div></div> -->
-	<div id="overlay"></div>
-			</div>
-        </div>
-        
-        <div id="facwpfooter">
-        	<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-// var wpcf7 = {"apiSettings":{"root":"https:\/\/lucacarlone.mit.edu\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.3" id="contact-form-7-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/bootstrap.min.js?ver=1.5.1" id="bootstrap-script-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.touchSwipe.min.js?ver=1.5.1" id="touchSwip-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.mousewheel.js?ver=1.5.1" id="mouswheel-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.carouFredSel-6.2.1-packed.js?ver=1.5.1" id="carouFredSel-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.dropdownit.js?ver=1.5.1" id="dropdown-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.mixitup.min.js?ver=1.5.1" id="mixitup-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/magnific-popup.js?ver=1.5.1" id="magnific-popup-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script> -->
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/ScrollToPlugin.min.js?ver=1.5.1" id="scrollTo-js"></script> -->
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/TweenMax.min.js?ver=1.5.1" id="tweenmax-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.nicescroll.min.js?ver=1.5.1" id="nice-scroll-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/owwwlab-lab-carousel.js?ver=1.5.1" id="owlab-lab-carousel-js"></script> -->
-<script type="text/javascript" id="twitter-wjs-js-extra"></script>
-<!-- <script type="text/javascript" id="twitter-wjs" async="" defer="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/waypoints.min.js?ver=1.5.1" id="waypoints-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1" id="wpb_composer_front_js-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/custom.js?ver=1.5.1" id="faculty-script-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/wp-embed.min.js?ver=5.5.3" id="wp-embed-js"></script> -->
-        </div>
-<!-- <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.6e189c4f2b6d88c453045806323cdcf3.html?origin=https%3A%2F%2Flucacarlone.mit.edu" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html> -->
+                    <!--  <div class="wpb_column vc_column_container vc_col-sm-4" style="background-color:#ffffff;margin-top: -30px;"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
+
+    </body>
+    </html>

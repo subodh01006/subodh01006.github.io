@@ -13,6 +13,17 @@
 }
 
 
+@article{ssfslpc,
+  id={123},
+  title={<b>Self-Supervised Few-Shot Learning on Point Clouds</b>.},
+  author={Charu, Sharma, and Manohar, Kaul.},
+  abstract={The increased availability of massive point clouds coupled with their utility in a wide variety of applications such as robotics, shape synthesis, and self-driving cars has attracted increased attention from both industry and academia. Recently, deep neural networks operating on labeled point clouds have shown promising results on supervised learning tasks like classification and segmentation. However, supervised learning leads to the cumbersome task of annotating the point clouds. To combat this problem, we propose two novel self-supervised pre-training tasks that encode a hierarchical partitioning of the point clouds using a cover-tree, where point cloud subsets lie within balls of varying radii at each level of the cover-tree. Furthermore, our self-supervised learning network is restricted to pre-train on the support set (comprising of scarce training examples) used to train the downstream network in a few-shot learning (FSL) setting. Finally, the fully-trained self-supervised network's point embeddings are used to initialize the downstream task's network. We present a comprehensive empirical evaluation of our method on both downstream classification and segmentation tasks and show that supervised methods pre-trained with our self-supervised learning method significantly improve the accuracy of state-of-the-art methods. Additionally, our method also outperforms previous unsupervised methods in downstream classification tasks.},
+  journal={Neural Information Processing Systems (NeurIPS)},
+  year={2020},
+  pdf={https://arxiv.org/pdf/2009.14168.pdf},
+  selected={true}
+}
+
 @article{wqkfh,
   id={2},
   title={<b>A Weighted Quiver Kernel using Functor Homology</b>.},
@@ -293,6 +304,7 @@ id={20},
   pdf={http://uu.diva-portal.org/smash/get/diva2:428018/FULLTEXT01.pdf},
   selected={true}
 }
+
 @article{ipsncisvqc,
 id={21},
   title={<b>Intelligent Packet Shaper to avoid Network Congestion for Improved Streaming Video Quality at Clients</b>.},

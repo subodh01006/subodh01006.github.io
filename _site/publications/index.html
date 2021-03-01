@@ -1,259 +1,138 @@
-<html class=" js no-touch csstransitions js_active  vc_desktop  vc_transform  vc_transform  vc_transform " lang="en-US"><head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1"><script type="text/javascript" src="https://bam-cell.nr-data.net/1/ab0374a39e?a=59283402&amp;v=1198.fe6ec20&amp;to=Z1QGZBZQVkNYU0YNWV4eJVMQWFdeFkBTA1MdQQVXAVNNWVVUVxY%3D&amp;rst=3596&amp;ck=1&amp;ref=https://lucacarlone.mit.edu/&amp;ap=210&amp;be=1727&amp;fe=3275&amp;dc=2703&amp;perf=%7B%22timing%22:%7B%22of%22:1614012602755,%22n%22:0,%22f%22:0,%22dn%22:33,%22dne%22:56,%22c%22:56,%22s%22:320,%22ce%22:1101,%22rq%22:1101,%22rp%22:1571,%22rpe%22:1574,%22dl%22:1718,%22di%22:2698,%22ds%22:2703,%22de%22:2713,%22dc%22:3273,%22l%22:3273,%22le%22:3276%7D,%22navigation%22:%7B%7D%7D&amp;fcp=2270&amp;at=SxMFEl5KRU0%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1198.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ab0374a39e",applicationID:"59283402"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <title>Manohar Kaul – Assistant Professor, Department of Computer Science and Engineering</title>
-<link rel="dns-prefetch" href="//platform.twitter.com">
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
-<link rel="stylesheet" id="font-awesome-four-css" href="https://lucacarlone.mit.edu/wp-content/plugins/font-awesome-4-menus/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="faculty-lato-css" href="https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C100italic%2C300italic%2C400italic&amp;ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="magnific-pupup-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/magnific-popup.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="faculty-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/style.css?ver=1.5.1" type="text/css" media="">
-<link rel="stylesheet" id="faculty-custom-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/styles/default.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="owl_acadmicons-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/academicons.css?ver=1.6.0" type="text/css" media="all">
-<link rel="stylesheet" id="xr-styles-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://lucacarlone.mit.edu/wp-content/plugins/tablepress/css/default.min.css?ver=1.12" type="text/css" media="all">
-<link rel="stylesheet" id="js_composer_front-css" href="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1" type="text/css" media="all">
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/papercite/js/papercite.js?ver=5.5.3" id="papercite-js"></script>
-<script type="text/javascript" id="monsterinsights-frontend-script-js-extra"></script>
+<html>
 
-<style id="fac_custom_options">
-		#blog-content,
-		#archive-content,
-		.fac-page,.home{
-			overflow:auto;
-			overflow-x:hidden;
-		}
-	ul#navigation > li.external:hover a .fa,
-	ul#navigation > li.current-menu-item > a .fa,
-	ul#navigation > li.current-menu-parent > a .fa,
-	.cd-active.cd-dropdown > span
-	{
-		color:#03cc85;
-	}
-	ul.ul-dates div.dates span,
-	ul.ul-card li .dy .degree,
-	ul.timeline li .date,
-	#labp-heads-wrap,
-	.labp-heads-wrap,
-	.ul-withdetails li .imageoverlay,
-	.cd-active.cd-dropdown ul li span:hover,
-	.pubmain .pubassets a.pubcollapse,
-	.pitems .pubmain .pubassets a:hover,
-	.pitems .pubmain .pubassets a:focus,
-	.pitems .pubmain .pubassets a.pubcollapse,
-	.commentlist .reply
-	{
-		background-color: #03cc85;
-	}
-	.ul-boxed li,
-	ul.timeline li .data,.widget ul li,
-	.fac-pagination{
-		border-left-color:#03cc85;
-	}
-	#labp-heads-wrap:after{
-		border-top-color: #03cc85;
-	}
-	ul.ul-dates div.dates span:last-child,
-	ul.ul-card li .dy .year,
-	ul.timeline li.open .circle{
-		background-color: #03bb7a;
-	}
-	ul.timeline li.open .data {
-		border-left-color: #03bb7a;
-	}
-	.pitems .pubmain .pubassets {
-		border-top-color: #03bb7a;
-	}
+<head>
+    <meta charset="UTF-8">
 
-	ul#navigation > li:hover,
-	ul#navigation > li:focus,
-	ul#navigation > li.current-menu-item,
-	ul#navigation > li.current-menu-parent {
-		background-color: #363636;
-		border-top: 1px solid #373737;
-		border-bottom: 1px solid #2B2B2B;
-	}
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
 
-	ul#navigation > li {
-		background-color: #303030;
-		border-top: 1px solid #373737;
-		border-bottom: 1px solid #2B2B2B;
-	}
+    <title>Manohar Kaul – Assistant Professor, Department of Computer Science and Engineering, IITH</title>
+    <link rel="stylesheet" id="xr-styles-css"
+        href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="js_composer_front-css"
+        href="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="shortcut icon" href="#">
 
+    <style id="fac_custom_options">
+        #blog-content,
+        #archive-content,
+        .fac-page,
+        .home {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+    </style>
 
+<body>
 
-	.fac-page #inside >.wpb_row:first-child:before {
-		border-top-color: #f3f3f3;
-	}
-	.fac-page #inside >.wpb_row:nth-child(odd),
-	.fac-page .section:nth-child(odd){
-		background-color: #f7f7f7;
-	}
-	.fac-page #inside >.wpb_row:nth-child(even),
-	.fac-page .section:nth-child(even){
-		background-color: #fcfcfc;
-	}
-	.fac-page #inside >.wpb_row:first-child,
-	.pageheader {
-		background-color: #f3f3f3;
-	}
-	.fac-page #inside >.wpb_row:first-child:before,
-	.pageheader:after {
-		border-top-color: #f3f3f3;
-	}
+    <div id="wrapper">
+        <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars" style="color:white;"></i></a>
+        <div id="sidebar" style="left: 0px;">
+            <div id="sidebar-wrapper" tabindex="0">
+                <div id="sidebar-inner">
+                    <!-- Profile/logo section-->
+                    <div id="profile" class="clearfix">
+                        <div class="portrate">
+                            <img src="/assets/img/prof_pic.jpg" alt="Manohar Kaul">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <h2>Manohar Kaul</h2>
+                            <h3>Assistant Professor, <a style="color:cornflowerblue" href="https://cse.iith.ac.in/"
+                                    target="blank">Department of Computer Science and Engineering</a>, <a
+                                    style="color:cornflowerblue" href="https://iith.ac.in/" target="blank">IIT</a></h3>
+                        </div>
+                    </div>
+                    <!-- /Profile/logo section-->
 
-	#sidebar,
-	ul#navigation .sub-menu {
-		background-color: #2b2b2b;
-	}
+                    <!-- Main navigation-->
+                    <div id="main-nav" style="padding-bottom: 118px;">
 
-	#sidebar-footer{
-		background-color: #202020;
-		}
+                        <ul id="navigation" class="">
+                            <li id="" class="" base-menu="1"><a href="/"><i
+                                        class="fa fa-home iconsize" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Home</div>
+                                </a></li>
+                            <li id="" class=""><a href="/publications/"><i
+                                        class="fa fa-mortar-board" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Publications</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-trophy" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Awards/Honours</div>
+                                </a></li>
+                            <li id="" class=""><a href="/talks/"><i
+                                        class="fa fa-video-camera" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Talks</div>
+                                </a></li>
+                            <li id="" class=""><a href="/teaching/"><i
+                                        class="fa fa-newspaper-o" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Teaching</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-briefcase" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Service</div>
+                                </a></li>
+                            <li id="" class=""><a href=""><i class="fa fa-forward" style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">Visiting Positions</div>
+                                </a></li>
+                            <li id="" class=""><a href="https://t0kudai.github.io/" target="blank"><i class="fa fa-user"
+                                        style="font-size: 2.2em;"></i>
+                                    <div style="font-size:1.1em;">क्रम (Krama) Lab</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <!-- /Main navigation-->
 
-	#gallery-header{
-		background-color: #2c2c2d;
-	}
-	#gallery-large{
-		background-color: #303030;
-	}
-	ul.ul-card li,
-	ul.timeline li .data,
-	.ul-boxed li,
-	.ul-withdetails li,
-	.pitems .pubmain,
-	.commentlist li{
-		background-color: #f5f5f5;
-	}
+                    <!--Sidebar footer-->
+                    <!-- Sidebar footer -->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/" target="blank"><i
+                                        class="fa fa-linkedin" style="font-size: 2em;"></i></a></li>
+                            <li><a target="_blank" href="https://scholar.google.com/" target="blank"><i
+                                        class="ai ai-google-scholar" style="font-size: 2em;"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/" target="blank"><i class="fa fa-github"
+                                        style="font-size: 2em;"></i></a></li>
+                        </ul>
+                    </div>
 
-	ul.timeline li.open .data,
-	.ul-withdetails li .details,
-	#lab-details,
-	.pitems .pubdetails,
-	.commentlist .comment-author-admin{
-		background-color: #fff;
-	}
-	a#hideshow,#hideshow i{
-		color: #FFED52;
-	}
-	.archive-header{
-		background-color: #2b2b2b;
-		/* color: ; */
-	}
-
-	#profile .title h2{
-		font-size: 28px;
-	}
-	#profile .title h3{
-		font-size: 18px;
-	}
-	ul#navigation > li > a{
-		font-size: 14px;
-	}
-	body{
-		font-size: 16px;
-	}
-	.fac-big-title{
-		font-size: 50px;
-	}
-	.headercontent .title{
-		font-size: 50px;
-	}
-	.fac-title, .fac-big-title, .headercontent .title{
-		color: #333333;
-	}
-	</style><!-- Global Site Tag (gtag.js) - Google Analytics -->
-
-
-<link rel="icon" type="image/png" href="/assets/img/IIT Hyderabad Logo.jpg">
-
-	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress.">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Luca Carlone"><meta name="twitter:site" content="@lucacarlone1"><meta name="twitter:description" content="Assistant Professor, Department of Aeronautics and Astronautics">
-
-<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1512240842733{margin-bottom: 0px !important;background-color: #ffffff !important;}.vc_custom_1512242800426{background-color: #e5e5e5 !important;}.vc_custom_1587256579297{background-color: #ffffff !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<script charset="utf-8" src="https://platform.twitter.com/js/button.cf7aaea83eb75b84ae4508f0ceb5dc4c.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.01dc90aad711d9816ce427578e2064b6.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.217a220423d55b36c29099c89d1abb2d.js"></script></head>
-	
-	<body class="home page-template page-template-page-pagebuilder page-template-page-pagebuilder-php page page-id-10 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
-	
-        <div id="wrapper">
-            <a href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
-
-<div id="sidebar" style="left: 0px;">
-    <div id="sidebar-wrapper" style="overflow-y: hidden; outline: currentcolor none medium;" tabindex="0">
-        <div id="sidebar-inner">
-          <!-- Profile/logo section-->
-          <div id="profile" class="clearfix">
-              <div class="portrate">
-                <a href="">
-                  <img src="/assets/img/prof_pic.jpg" alt="Manohar Kaul">
-                </a>
-              </div>
-              <div class="title">
-                  <h2>Manohar Kaul</h2>
-                  <h3>Assistant Professor, <a href="https://cse.iith.ac.in/">Department of Computer Science and Engineering</a>, <a href="https://iith.ac.in/" >IIT</a></h3>
-              </div>   
-          </div>
-          <!-- /Profile/logo section-->
-
-          <!-- Main navigation-->
-          <div id="main-nav" style="padding-bottom: 118px;">
-              <ul id="navigation" class="">
-                <li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-470" base-menu="1"><a href="/"><i class="fa fa-home iconsize" aria-hidden="true"></i>  Home</a></li>
-                <li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="/publications/"><i class="fa fa-mortar-board"></i> Publications</a></li>
-				<!-- <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="/projects/"><i class="fa fa-send-o"></i> Projects</a></li> -->
-
-                <li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href=""><i class="fa fa-trophy"></i> Awards/Honours</a></li>
-                <li id="menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-506"><a href="/talks/"><i class="fa fa-video-camera"></i> Talks</a></li>
-                <!-- <li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-509"><a href="/students/"><i class="fa fa fa-users"></i> Team</a></li> -->
-                <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="/teaching/"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Teaching</a></li>
-				<li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i>Service</a></li>
-                <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href=""><i class="fa fa-forward" aria-hidden="true"></i>Visiting Positions</a></li>
-
-                <li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="https://t0kudai.github.io/"><i class="fa fa-user" aria-hidden="true"></i> Krama Lab</a></li>
-
-              </ul>          
-          </div>
-          <!-- /Main navigation-->
-
-          <!--Sidebar footer-->
-           <!-- Sidebar footer -->
-    <div class="social-icons">
-        <ul>
-            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a target="_blank" href="https://scholar.google.com/"><i class="ai ai-google-scholar-square ai-3x"></i></a></li>                        
-            <li><a target="_blank" href="https://github.com/"><i class="fa fa-github"></i></a></li>
-        </ul>
-    </div> 
-    <!-- social icon -->
-    
-    <div id="copyright">Copyright © Manohar Kaul</div>
-    
-</div>
- <!-- /Sidebar footer -->           <!--Sidebar footer-->
+                    <div id="copyright">Copyright © Manohar Kaul</div>
+                </div>
+            </div>
         </div>
 
+        <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr"
+            style="width: 6px; z-index: auto; cursor: default; position: absolute; top: 0px; left: 244px; height: 507px; touch-action: none; display: block; opacity: 0;">
+            <div style="position: relative; top: 170px; float: right; width: 6px; height: 337px; background-color: rgb(170, 170, 170); border: medium none; background-clip: padding-box; border-radius: 0px; touch-action: none;"
+                class="nicescroll-cursors"></div>
+        </div>
     </div>
-
-<div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: auto; cursor: default; position: absolute; top: 0px; left: 244px; height: 507px; touch-action: none; display: block; opacity: 0;"><div style="position: relative; top: 170px; float: right; width: 6px; height: 337px; background-color: rgb(170, 170, 170); border: medium none; background-clip: padding-box; border-radius: 0px; touch-action: none;" class="nicescroll-cursors"></div></div></div>
-            <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
-    
-	<div class="fac-page home">
-		<div id="inside">
-				
-<!-- <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.6e189c4f2b6d88c453045806323cdcf3.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=https%3A%2F%2Flucacarlone.mit.edu%2F&amp;partner=tfwp&amp;size=m&amp;text=Luca%20Carlone%20%E2%80%93%20Assistant%20Professor%2C%20Department%20of%20Aeronautics%20and%20Astronautics&amp;time=1614012606305&amp;type=share&amp;url=https%3A%2F%2Flucacarlone.mit.edu%2F&amp;via=lucacarlone1" data-url="https://lucacarlone.mit.edu/" frameborder="0"></iframe></div> -->
-<!-- <div class="vc_row wpb_row vc_row-fluid vc_custom_1512240842733 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
-	<!-- <div class="wpb_text_column wpb_content_element ">  -->
-	  <!-- <div class="wpb_wrapper"> -->
-			<div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
+    <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
+        <div class="fac-page home" style="background-color:#f7f7f7">
+            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank"
+                    class="twitter-share-button">Tweet</a></div>-->
+            <div id="inside">
+                <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true"
+                        allowfullscreen="true"
+                        class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                        style="position: static; visibility: visible; width: 60px; height:0px;"
+                        title="Twitter Tweet Button" src="" frameborder="0"></iframe></div>
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1512240842733 vc_row-has-fill">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner ">
+                            <div class="wpb_wrapper">
+                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper" style="margin-left: -110px;">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper"
+                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px; ">
+                                                        <p>
+                                                            <!-- <img loading="lazy" class="alignleft wp-image-876" src="/assets/img/mkaul_corpped_.jpg" alt="" sizes="(max-width: 250px) 100vw, 250px" width="230" height="300"> -->
+                                                            <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
 <div class="post" style="margin-left:50px;">
   <div style="margin:50px;">
   <header class="post-header">
@@ -468,11 +347,11 @@ font-weight: 300;
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>In this paper, we present a novel method named RECON, that automatically identifies relations in a sentence (sentential relation extraction) and aligns to a knowledge graph (KG). RECON uses a graph neural network to learn representations of both the sentence as well as facts stored in a KG, improving the overall extraction quality. These facts, including entity attributes (label, alias, description, instance-of) and factual triples, have not been collectively used in the state of the art methods. We evaluate the effect of various forms of representing the KG context on the performance of RECON. The empirical evaluation on two standard relation extraction datasets shows that RECON significantly outperforms all state of the art methods on NYT Freebase and Wikidata datasets.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -482,6 +361,116 @@ font-weight: 300;
     <div>
       
       <ol class="bibliography"><li><style>
+  .button5 {
+  background-color: rgb(223, 217, 217);
+  color: black;
+  border: 1px solid #555555;
+  border-radius: 15px;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block !important;
+}
+</style>
+<script>
+  function togg(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("show");
+  }
+</script>
+
+<div class="row">
+  <div class="col-sm-2 abbr">
+  
+  </div>
+
+  <div id="ssfslpc" class="col-sm-8">
+    
+      <div class="title"><a href="https://arxiv.org/pdf/2009.14168.pdf" target="_blank"><b>Self-Supervised Few-Shot Learning on Point Clouds</b>.</a></div>
+      <div class="venue"><a href="" target="_blank">Neural Information Processing Systems (NeurIPS)</a>, <em>2020</em></div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Charu, Sharma,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and Manohar, Kaul.
+                
+              
+            
+          
+        
+      </div>
+
+      <!-- <div class="periodical">
+      
+        <em>Neural Information Processing Systems (NeurIPS)</em>
+      
+      
+        2020
+      
+      </div>
+     -->
+
+    <div class="links">
+    
+    <a href="javascript:void(0)" onclick="togg(123)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Abstract]</a>
+    
+      <a href="javascript:void(0)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
+      <div class="hide" id="123" style="font-weight:bold">The increased availability of massive point clouds coupled with their utility in a wide variety of applications such as robotics, shape synthesis, and self-driving cars has attracted increased attention from both industry and academia. Recently, deep neural networks operating on labeled point clouds have shown promising results on supervised learning tasks like classification and segmentation. However, supervised learning leads to the cumbersome task of annotating the point clouds. To combat this problem, we propose two novel self-supervised pre-training tasks that encode a hierarchical partitioning of the point clouds using a cover-tree, where point cloud subsets lie within balls of varying radii at each level of the cover-tree. Furthermore, our self-supervised learning network is restricted to pre-train on the support set (comprising of scarce training examples) used to train the downstream network in a few-shot learning (FSL) setting. Finally, the fully-trained self-supervised network’s point embeddings are used to initialize the downstream task’s network. We present a comprehensive empirical evaluation of our method on both downstream classification and segmentation tasks and show that supervised methods pre-trained with our self-supervised learning method significantly improve the accuracy of state-of-the-art methods. Additionally, our method also outperforms previous unsupervised methods in downstream classification tasks.</div>
+      
+    
+    
+    <!-- 
+      
+      <a href="https://arxiv.org/pdf/2009.14168.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+     -->
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    <!-- 
+    <div class="abstract hidden">
+      <p>The increased availability of massive point clouds coupled with their utility in a wide variety of applications such as robotics, shape synthesis, and self-driving cars has attracted increased attention from both industry and academia. Recently, deep neural networks operating on labeled point clouds have shown promising results on supervised learning tasks like classification and segmentation. However, supervised learning leads to the cumbersome task of annotating the point clouds. To combat this problem, we propose two novel self-supervised pre-training tasks that encode a hierarchical partitioning of the point clouds using a cover-tree, where point cloud subsets lie within balls of varying radii at each level of the cover-tree. Furthermore, our self-supervised learning network is restricted to pre-train on the support set (comprising of scarce training examples) used to train the downstream network in a few-shot learning (FSL) setting. Finally, the fully-trained self-supervised network’s point embeddings are used to initialize the downstream task’s network. We present a comprehensive empirical evaluation of our method on both downstream classification and segmentation tasks and show that supervised methods pre-trained with our self-supervised learning method significantly improve the accuracy of state-of-the-art methods. Additionally, our method also outperforms previous unsupervised methods in downstream classification tasks.</p>
+    </div>
+     -->
+  </div>
+</div>
+</li>
+<li><style>
   .button5 {
   background-color: rgb(223, 217, 217);
   color: black;
@@ -595,7 +584,7 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>In this paper, we propose a new homological method to study weighted directed networks. Our model of such networks is a directed graph QQ equipped with a weight function ww on the set Q_1Q 
 1
@@ -611,7 +600,7 @@ n
 ​	
  (Q,w;M) can be easily computed. This fact allows us to define a new graph kernel for weighted directed graphs. We made two sample computations with real data and found that our method is practically applicable.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -717,11 +706,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Recent increase in the availability of warped images projected onto a manifold (e.g., omnidirectional spherical images), coupled with the success of higher-order assignment methods, has sparked an interest in the search for improved higher-order matching algorithms on warped images due to projection. Although currently, several existing methods ’flatten’ such 3D images to use planar graph / hypergraph matching methods, they still suffer from severe distortions and other undesired artifacts, which result in inaccurate matching. Alternatively, current planar methods cannot be trivially extended to effectively match points on images warped onto manifolds. Hence, matching on these warped images persists as a formidable challenge. In this paper, we pose the assignment problem as finding a bijective map between two graph induced simplicial complexes, which are higher-order analogues of graphs. We propose a constrained quadratic assignment problem (QAP) that matches each p-skeleton of the simplicial complexes, iterating from the highest to the lowest dimension. The accuracy and robustness of our approach are illustrated on both synthetic and real-world spherical / warped (projected) images with known ground-truth correspondences. We significantly outperform existing state-of-the-art spherical matching methods on a diverse set of datasets.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -842,11 +831,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Several state-of-the-art neural graph embedding methods are based on short random walks (stochastic processes) because of their ease of computation, simplicity in capturing complex local graph properties, scalability, and interpretibility. In this work, we are interested in studying how much a probabilistic bias in this stochastic process affects the quality of the nodes picked by the process. In particular, our biased walk, with a certain probability, favors movement towards nodes whose neighborhoods bear a structural resemblance to the current node’s neighborhood. We succinctly capture this neighborhood as a probability measure based on the spectrum of the node’s neighborhood subgraph represented as a normalized Laplacian matrix. We propose the use of a paragraph vector model with a novel Wasserstein regularization term. We empirically evaluate our approach against several state-of-the-art node embedding techniques on a wide variety of real-world datasets and demonstrate that our proposed method significantly improves upon existing methods on both link prediction and node classification tasks.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -967,11 +956,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>We propose to study the problem of few-shot graph classification in graph neural networks (GNNs) to recognize unseen classes, given limited labeled graph examples. Despite several interesting GNN variants being proposed recently for node and graph classification tasks, when faced with scarce labeled examples in the few-shot setting, these GNNs exhibit significant loss in classification performance. Here, we present an approach where a probability measure is assigned to each graph based on the spectrum of the graph’s normalized Laplacian. This enables us to accordingly cluster the graph base-labels associated with each graph into super-classes, where the L^p Wasserstein distance serves as our underlying distance metric. Subsequently, a super-graph constructed based on the super-classes is then fed to our proposed GNN framework which exploits the latent inter-class relationships made explicit by the super-graph to achieve better class label separation among the graphs. We conduct exhaustive empirical evaluations of our proposed method and show that it outperforms both the adaptation of state-of-the-art graph classification methods to few-shot scenario and our naive baseline GNNs. Additionally, we also extend and study the behavior of our method to semi-supervised and active learning scenarios.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -1108,11 +1097,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>The recent proliferation of knowledge graphs (KGs) coupled with incomplete or partial information, in the form of missing relations (links) between entities, has fueled a lot of research on knowledge base completion (also known as relation prediction). Several recent works suggest that convolutional neural network (CNN) based models generate richer and more expressive feature embeddings and hence also perform well on relation prediction. However, we observe that these KG embeddings treat triples independently and thus fail to cover the complex and hidden information that is inherently implicit in the local neighborhood surrounding a triple. To this effect, our paper proposes a novel attention-based feature embedding that captures both entity and relation features in any given entity’s neighborhood. Additionally, we also encapsulate relation clusters and multi-hop relations in our model. Our empirical study offers insights into the efficacy of our attention-based model and we show marked performance gains in comparison to state-of-the-art methods on all datasets.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -1234,11 +1223,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>We present an alternate formulation of the partial assignment problem as matching random clique complexes, that are higher-order analogues of random graphs, designed to provide a set of invariants that better detect higher-order structure. The proposed method creates random clique adjacency matrices for each k-skeleton of the random clique complexes and matches them, taking into account each point as the affine combination of its geometric neighborhood. We justify our solution theoretically, by analyzing the algorithm’s runtime and storage complexity along with the asymptotic behavior of the quadratic assignment problem (QAP) that is associated with the underlying random adjacency matrices. Accuracy experiments on both synthetic and real-world datasets containing severe occlusions and distortions, demonstrate the robustness of our approach. We outperform diverse matching algorithm by a significant margin.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -1390,11 +1379,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Large-scale graph and machine learning analytics widely employ distributed iterative processing. Typically, these analytics are a part of a comprehensive workflow, which includes data preparation, model building, and model evaluation. General-purpose distributed dataflow frameworks execute all steps of such workflows holistically. This holistic view enables these systems to reason about and automatically optimize the entire pipeline. Here, graph and machine learning analytics are known to incur a long runtime since they require multiple passes over the data until convergence is reached. Thus, fault tolerance and a fast-recovery from any intermittent failure is critical for efficient analysis. In this paper, we propose novel fault-tolerant mechanisms for graph and machine learning analytics that run on distributed dataflow systems. We seek to reduce checkpointing costs and shorten failure recovery times. For graph processing, rather than writing checkpoints that block downstream operators, our mechanism writes checkpoints in an unblocking manner that does not break pipelined tasks. In contrast to the conventional approach for unblocking checkpointing (e.g., that manage checkpoints independently for immutable datasets), we inject the checkpoints of mutable datasets into the iterative dataflow itself. Hence, our mechanism is iteration-aware by design. This simplifies the system architecture and facilitates coordinating checkpoint creation during iterative graph processing. Moreover, we are able to rapidly rebound, via confined recovery, by exploiting the fact that log files exist locally on healthy nodes and managing to avoid a complete recomputation from scratch. In addition, we propose replica recovery for machine learning algorithms, whereby we employ a broadcast variable that enables us to quickly recover without having to introduce any checkpoints. In order to evaluate our fault tolerance strategies, we conduct both a theoretical study and empirical experimental analyses using Apache Flink and discover that they outperform blocking checkpointing and complete recovery.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -1481,11 +1470,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>In T̈he Sign of Four\", Sherlock Holmes makes some very startling inferences about Watson’s whereabouts by informing Watson that he was at the Wigmore Street Post Office earlier that morning. On further inquiry by Watson, Holmes explains that he combined (joined) the observation that Ẅatson’s shoes had a reddish mud on their instep\", with the fact that \“just opposite the Wigmore Post Office the pavement was freshly dug up to expose a similar reddish mud and it was so positioned that it would be challenging to enter the office without treading into the mud\". Contrary to the popular belief that this is deduction, this method of reasoning is actually an example of abductive inference. Abduction begins from the facts observed and then seeks the simplest hypothesis (\“Occam’s razor\") that best explains the facts, while deduction finds data to support a hypothesis. Given the big data challenge that we presently face, is it then possible to utilize an abductive model (effect to cause reasoning) to find the best explanation for the observations, as opposed to the traditional method of forming hypotheses and testing them with observations (cause to effect reasoning)? Can our databases extend our understanding of this data automatically by inferring explanations from incomplete observations.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -1697,11 +1686,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Locality sensitive hashing (LSH) is a powerful tool for sublinear-time approximate nearest neighbor search, and a variety of hashing schemes have been proposed for different similarity measures. However, hash codes significantly depend on the similarity, which prohibits users from adjusting the similarity at query time. In this paper, we propose multiple purpose LSH (mp-LSH) which shares the hash codes for different similarities. By using vector/code augmentation and cover tree techniques, our mp-LSH supports L2, cosine, and inner product similarities, and their corresponding weighted sums, where the weights can be adjusted at query time. It also allows us to modify the importance of pre-defined groups of features. Thus, mp-LSH enables us, for example, to retrieve similar items to a query with the user preference taken into account, to find a similar material to a query with some properties (stability, utility, etc.) optimized, and to turn on or off a part of multi-modal information (brightness, color, audio, text, etc.) in image/video retrieval. We theoretically and empirically analyze the performance of three variants of mp-LSH, and demonstrate their usefulness on several real-world data sets..</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -1822,11 +1811,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Digitally collected data suffers from many data quality issues, such as duplicate, incorrect, or incomplete data. A common approach for counteracting these issues is to formulate a set of data cleaning rules to identify and repair incorrect, duplicate and missing data. Data cleaning systems must be able to treat data quality rules holistically, to incorporate heterogeneous constraints within a single routine, and to automate data curation. We propose an approach to data cleaning based on statistical relational learning (SRL). We argue that a formalism - Markov logic - is a natural fit for modeling data quality rules. Our approach allows for the usage of probabilistic joint inference over interleaved data cleaning rules to improve data quality. Furthermore, it obliterates the need to specify the order of rule execution. We describe how data quality rules expressed as formulas in first-order logic directly translate into the predictive model in our SRL framework..</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -1962,11 +1951,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Real-world graph processing applications in many instances require combining the graph data with tabular data or making the graph processing a part of a larger analytics pipeline. General-purpose distributed dataflow frameworks typically execute such pipelines while analyzing the entire pipeline in a holistic manner to further optimize the processing. A majority of big graph processing algorithms are iterative in nature and incur a long runtime, therefore it becomes all the more necessary to tolerate and recover quickly from any intermittent failures. In this work, we propose an efficient fault-tolerance mechanism for iterative graph processing on distributed data-flow systems with the objective to reduce the checkpointing cost and failure recovery time. Rather than writing checkpoints that block downstream operators, we write checkpoints in an unblocking manner. Also, in comparison to the typical unblocking checkpointing approach of managing checkpoints independently, we inject the checkpoints into the dataflow itself. It not only inherits the advantage of a low execution latency without breaking the pipelined tasks, but simplifies the system design to coordinate the checkpoint writing. Further, we achieve speedier recovery, i.e., confined recovery, by using the local log files on each node to avoid a complete re- computation from scratch. Our theoretical studies as well as experimental analysis on Flink give further insight into our fault- tolerance strategies and show that they are more efficient than blocking checkpointing and complete recovery for iterative graph processing on dataflow systems.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -2107,11 +2096,11 @@ n
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>The increasing availability of massive and accurate laser data enables the processing of spatial queries on terrains. As shortest-path computation, an integral element of query processing, is inherently expensive on terrains, a key approach to enabling efficient query processing is to reduce the need for exact shortest-path computation in query processing. We develop new lower and upper bounds on terrain shortest distances that are provably tighter than any existing bounds. Unlike existing bounds, the new bounds do not rely on the quality of the triangulation. We show how use of the new bounds speeds up query processing by reducing the need for exact distance computations. Speedups of of nearly an order of magnitude are demonstrated empirically for well-known spatial queries.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -2238,17 +2227,17 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Association rule mining remains a very popular and effective method to extract meaningful information from large datasets. It tries to find possible associations between items in large transaction based datasets. In order to create these associations, frequent patterns have to be generated. The Äpriori\"algorithm along with its set of improved variants, which were one of the earliest proposed frequent pattern generation algorithms still remain a preferred choice due to their ease of implementation and natural tendency to be parallelized.
-<br />
+<br>
 While many efficient single-machine methods for Apriori exist, the massive amount of data available these days is far beyond the capacity of a single machine. Hence, there is a need to scale across multiple machines to meet the demands of this ever- growing data. MapReduce is a popular fault-tolerant framework for distributed applications. Nevertheless, heavy disk I/O at each MapReduce operation hinders the implementation of efficient iterative data mining algorithms, such as Apriori, on MapReduce platforms.
-<br />
+<br>
 A newly proposed in-memory distributed dataflow platform called Spark overcomes the disk I/O bottlenecks in MapReduce. Therefore, Spark presents an ideal platform for distributed Apriori. However, in the implementation of Apriori, the most computationally expensive task is the generation of candidate sets having all possible pairs for singleton frequent items and comparing each pair with every transaction record. Here, we propose a new approach which dramatically reduces this computational complexity by eliminating the candidate generation step and avoiding costly comparisons.
-<br />
+<br>
 We conduct in-depth experiments to gain insight into the effectiveness, efficiency and scalability of our approach. Our studies show that our approach outperforms the classical Apriori and state-of-the-art on Spark by many times for different datasets.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -2400,11 +2389,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Terrain data is becoming increasingly popular both in industry and in academia. Many tools have been developed for visualizing terrain data. However, we find that (1) they usually accept very few data formats of terrain data only; (2) they do not support terrain simplification well which, as will be shown, is used heavily for query processing in spatial databases; and (3) they do not provide the surface distance operator which is fundamental for many applications based on terrain data. Motivated by this, we developed a tool called Terrain-Toolkit for terrain data which accepts a comprehensive set of data formats, supports terrain simplification and provides the surface distance operator.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -2555,11 +2544,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Different uses of a road network call for the consideration of different travel costs: in route planning, travel time and distance are typically considered, and green house gas (GHG) emissions are increasingly being considered. Further, costs such as travel time and GHG emissions are time-dependent and uncertain. To support such uses, we propose techniques that enable the construction of a multi-cost, time-dependent, uncertain graph (MTUG) model of a road network based on GPS data from vehicles that traversed the road network. Based on the MTUG, we define optimal routes that consider multiple costs and time-dependent uncertainty, and we propose efficient algorithms to retrieve optimal routes for a given source-destination pair and a start time. Empirical studies with three road networks in Denmark and a substantial GPS data set offer insight into the design properties of the MTUG and the efficiency of the optimal route algorithms.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -2710,11 +2699,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>With the increasing availability of terrain data, e.g., from aerial laser scans, the management of such data is attracting increasing attention in both industry and academia. In particular, spatial queries, e.g., k-nearest neighbor and reverse nearest neighbor queries, in Euclidean and spatial network spaces are being extended to terrains. Such queries all rely on an important operation, that of finding shortest surface distances. However, shortest surface distance computation is very time consuming. We propose techniques that enable efficient computation of lower and upper bounds of the shortest surface distance, which enable faster query processing by eliminating expensive distance computations. Empirical studies show that our bounds are much tighter than the best-known bounds in many cases and that they enable speedups of up to 43 times for some well-known spatial queries.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -2851,11 +2840,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li>
@@ -2991,11 +2980,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>The use of accurate 3D spatial network models can enable substantial improvements in vehicle routing. Notably, such models enable eco-routing, which reduces the environmental impact of transportation. We propose a novel filtering and lifting framework that augments a standard 2D spatial network model with elevation information extracted from massive aerial laser scan data and thus yields an accurate 3D model. We present a filtering technique that is capable of pruning irrelevant laser scan points in a single pass, but assumes that the 2D network fits in internal memory and that the points are appropriately sorted. We also provide an external-memory filtering technique that makes no such assumptions. During lifting, a triangulated irregular network (TIN) surface is constructed from the remaining points. The 2D network is projected onto the TIN, and a 3D network is constructed by means of interpolation. We report on a large-scale empirical study that offers insight into the accuracy, efficiency, and scalability properties of the framework.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -3162,11 +3151,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>The reduction of greenhouse gas (GHG) emissions from transportation is essential for achieving politically agreed upon emissions reduction targets that aim to combat global climate change. So-called eco-routing and eco-driving are able to substantially reduce GHG emissions caused by vehicular transportation. To enable these, it is necessary to be able to reliably quantify the emissions of vehicles as they travel in a spatial network. Thus, a number of models have been proposed that aim to quantify the emissions of a vehicle based on GPS data from the vehicle and a 3D model of the spatial network the vehicle travels in. We develop an evaluation framework, called EcoMark, for such environmental impact models. In addition, we survey all eleven state-of-the-art impact models known to us. To gain insight into the capabilities of the models and to understand the effectiveness of the EcoMark, we apply the framework to all models.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -3318,11 +3307,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>Emerging trends in urban mobility have accelerated the need for effective traffic prediction and management systems. The present paper proposes a novel approach to using continuously streaming moving object trajectories for traffic prediction and management. The approach continuously performs three functions for streams of moving object positions in road networks: 1) management of current evolving trajec tories, 2) incremental mining of closed frequent routes, and 3) prediction of near-future locations and densities based on 1) and 2). The approach is empirically evaluated on a large real-world data set of moving object trajectories, originating from a fleet of taxis, illustrating that detailed closed frequent routes can be efficiently discovered and used for prediction.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -3448,11 +3437,11 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
     </div>
 
     <!-- Hidden abstract block -->
-    
+    <!-- 
     <div class="abstract hidden">
       <p>This paper proposes a traffic shaping algorithm based on neural networks, which adapts to a network over which streaming video is being transmitted. The purpose of this intelligent shaper is to eradicate traffic congestion and improve end-user video quality. It posseses the capability to predict, to a very high level of accuracy, a state of congestion based upon the training data collected about the network’s behaviour.</p>
     </div>
-    
+     -->
   </div>
 </div>
 </li></ol>
@@ -3467,41 +3456,18 @@ We conduct in-depth experiments to gain insight into the effectiveness, efficien
 </div>
 </div>
 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-		 <!-- </div>  -->
-   
-	<!-- </div> -->
-<!-- </div> -->
-<!-- </div></div></div></div></div></div> -->
-	<div id="overlay"></div>
-			</div>
-        </div>
-        
-        <div id="facwpfooter">
-        	<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-// var wpcf7 = {"apiSettings":{"root":"https:\/\/lucacarlone.mit.edu\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.3" id="contact-form-7-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/bootstrap.min.js?ver=1.5.1" id="bootstrap-script-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.touchSwipe.min.js?ver=1.5.1" id="touchSwip-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.mousewheel.js?ver=1.5.1" id="mouswheel-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.carouFredSel-6.2.1-packed.js?ver=1.5.1" id="carouFredSel-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.dropdownit.js?ver=1.5.1" id="dropdown-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.mixitup.min.js?ver=1.5.1" id="mixitup-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/magnific-popup.js?ver=1.5.1" id="magnific-popup-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script> -->
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/ScrollToPlugin.min.js?ver=1.5.1" id="scrollTo-js"></script> -->
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/TweenMax.min.js?ver=1.5.1" id="tweenmax-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/jquery.nicescroll.min.js?ver=1.5.1" id="nice-scroll-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/owwwlab-lab-carousel.js?ver=1.5.1" id="owlab-lab-carousel-js"></script> -->
-<script type="text/javascript" id="twitter-wjs-js-extra"></script>
-<!-- <script type="text/javascript" id="twitter-wjs" async="" defer="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/waypoints.min.js?ver=1.5.1" id="waypoints-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.1.1" id="wpb_composer_front_js-js"></script>
-<script type="text/javascript" src="https://lucacarlone.mit.edu/wp-content/themes/faculty/js/custom.js?ver=1.5.1" id="faculty-script-js"></script>
-<!-- <script type="text/javascript" src="https://lucacarlone.mit.edu/wp-includes/js/wp-embed.min.js?ver=5.5.3" id="wp-embed-js"></script> -->
-        </div>
-<!-- <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.6e189c4f2b6d88c453045806323cdcf3.html?origin=https%3A%2F%2Flucacarlone.mit.edu" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html> -->
+                    <!--  <div class="wpb_column vc_column_container vc_col-sm-4" style="background-color:#ffffff;margin-top: -30px;"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
+
+    </body>
+    </html>

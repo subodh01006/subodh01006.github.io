@@ -41,33 +41,35 @@
                         </div>
                         <div class="title">
                             <h2>Manohar Kaul</h2>
-                            <h3>Assistant Professor, <a style="color:cornflowerblue" href="https://cse.iith.ac.in/"
-                                    target="blank">Department of Computer Science and Engineering</a>, <a
-                                    style="color:cornflowerblue" href="https://iith.ac.in/" target="blank">IIT</a></h3>
+                            <h3>Assistant Professor,</head>
+                            </h3>
+                            <h3><a style="color:cornflowerblue" href="https://cse.iith.ac.in/" target="blank">Department
+                                    of Computer Science and Engineering</a>,<br><a style="color:cornflowerblue"
+                                    href="https://iith.ac.in/" target="blank">IIT Hyderabad</a></h3>
                         </div>
                     </div>
                     <!-- /Profile/logo section-->
 
-                    <!-- Main navigation-->
+                    <!-- Main navigation--->
                     <div id="main-nav" style="padding-bottom: 118px;">
 
                         <ul id="navigation" class="">
-                            <li id="" class="" base-menu="1"><a href="/"><i
+                            <li id="" class="" base-menu="1"><a href="{{ '/' | relative_url }}"><i
                                         class="fa fa-home iconsize" style="font-size: 2.2em;"></i>
                                     <div style="font-size:1.1em;">Home</div>
                                 </a></li>
-                            <li id="" class=""><a href="/publications/"><i
+                            <li id="" class=""><a href="{{ site.baseurl }}{% link _pages/publications.md %}"><i
                                         class="fa fa-mortar-board" style="font-size: 2.2em;"></i>
                                     <div style="font-size:1.1em;">Publications</div>
                                 </a></li>
                             <li id="" class=""><a href=""><i class="fa fa-trophy" style="font-size: 2.2em;"></i>
                                     <div style="font-size:1.1em;">Awards/Honours</div>
                                 </a></li>
-                            <li id="" class=""><a href="/talks/"><i
+                            <li id="" class=""><a href="{{ site.baseurl }}{% link _pages/talks.md %}"><i
                                         class="fa fa-video-camera" style="font-size: 2.2em;"></i>
                                     <div style="font-size:1.1em;">Talks</div>
                                 </a></li>
-                            <li id="" class=""><a href="/teaching/"><i
+                            <li id="" class=""><a href="{{ site.baseurl }}{% link _pages/teaching.md %}"><i
                                         class="fa fa-newspaper-o" style="font-size: 2.2em;"></i>
                                     <div style="font-size:1.1em;">Teaching</div>
                                 </a></li>
@@ -111,8 +113,7 @@
     </div>
     <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
         <div class="fac-page home" style="background-color:#f7f7f7">
-            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank"
-                    class="twitter-share-button">Tweet</a></div>-->
+            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank" class="twitter-share-button">Tweet</a></div>  -->
             <div id="inside">
                 <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true"
                         allowfullscreen="true"
@@ -120,7 +121,7 @@
                         style="position: static; visibility: visible; width: 60px; height:0px;"
                         title="Twitter Tweet Button" src="" frameborder="0"></iframe></div>
                 <div class="vc_row wpb_row vc_row-fluid vc_custom_1512240842733 vc_row-has-fill">
-                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="wpb_column vc_column_container vc_col-sm-8">
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
                                 <div class="vc_row wpb_row vc_inner vc_row-fluid">
@@ -129,32 +130,10 @@
                                             <div class="wpb_wrapper" style="margin-left: -110px;">
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper"
-                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px; ">
-                                                        <p>
+                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px;">
+                                                        <p style="text-align:justify">
                                                             <!-- <img loading="lazy" class="alignleft wp-image-876" src="/assets/img/mkaul_corpped_.jpg" alt="" sizes="(max-width: 250px) 100vw, 250px" width="230" height="300"> -->
-                                                            <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
-<div class="post" style="margin-left:50px;">
-  <div style="margin:50px;">
-  <header class="post-header">
-    <h1 class="post-title" style="font-weight: bold;">visits</h1>
-    <!-- <p class="post-description">Visits.</p> -->
-  </header>
-
-  <style>
-    li{
-      list-style-type: none;
-    }
-  </style>
-
-  <article>
-    <p>For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to <code class="language-plaintext highlighter-rouge">_projects/</code> so that you can have a dedicated page for each course.</p>
-
-<p>Organize your courses by years, topics, or universities, however you like!</p>
-
-  </article>
-</div>
-</div>
-
+                                                            {{content}}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -166,7 +145,32 @@
                         </div>
                     </div>
 
-                    <!--  <div class="wpb_column vc_column_container vc_col-sm-4" style="background-color:#ffffff;margin-top: -30px;"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
+                    <div class="wpb_column vc_column_container vc_col-sm-4"
+                        style="background-color:#ffffff;margin-top: -30px;">
+                        <div class="vc_column-inner ">
+                            <div class="wpb_wrapper">
+                                <div class="wpb_text_column wpb_content_element ">
+                                    <div class="wpb_wrapper">
+                                        <div class="twitter-timeline-profile">
+                                            <!-- <iframe id="twitter-widget-2" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; height: 779.65px;" data-widget-id="profile:lucacarlone1" title="Twitter Timeline" frameborder="0">
+                            <a class="twitter-timeline" href="https://twitter.com/ManuKaul1?ref_src=twsrc%5Etfw">Tweets by ManuKaul1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </iframe> -->
+                                            <div class="" style="margin-top:45px;">
+                                                <div style="overflow:scroll; height:80vh;">
+                                                    <a class="twitter-timeline"
+                                                        href="https://twitter.com/ManuKaul1?ref_src=twsrc%5Etfw">Tweets
+                                                        by ManuKaul1</a>
+                                                    <script async src="https://platform.twitter.com/widgets.js"
+                                                        charset="utf-8"></script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </body>
-    </html>
+</body>
+
+</html>

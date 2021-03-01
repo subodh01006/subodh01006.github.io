@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: homepage
 ---
-<div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
+<!-- <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>  -->
 <div class="post-header">
   <h1 class="post-title">
     {% if site.title == blank %}{{ site.title }}{% else %}
-    <div style="margin-left: 120px;">
+    <div style="margin-left: 50px;">
     <span class="font-weight-bold" style="font-weight: bold;">{{ site.first_name }}</span>
     {{ site.middle_name }} {{ site.last_name }}{% endif %}
     </div>
@@ -13,21 +13,22 @@ layout: default
   <p class="desc" style="margin-left: 120px;margin-top: -15;" >{{ page.description }}</p>
 </div>
 <div class="row" style="margin-top: -40px;">
-  <div class="col-sm-8" style="padding:90px; margin-top: -90px;"><div class="main_photo"><img style="margin: 50px; margin-right: 15px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
+  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 50px;">
+  <div class="main_photo"><img style="margin-top: 18px; margin-right: 15px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
   </div>
-  <div style="margin:45px">{{content}}</div>
+  <div style="margin:-1px">{{content}}</div>
   <p>&nbsp;</p>
 
-  <div class="news" style="margin:50px;">
+  <div class="news" style="margin-top:-30px;margin-left:0px;">
     {% if page.news %}
     {% include news.html %}
     {% endif %}
     </div>
   </div>
-  <div class="col-sm-4" style="margin-top:45px;">
+  <!-- <div class="col-sm-4" style="margin-top:45px;">
     <div style="margin-right: 130px; overflow:scroll; height:80vh;">
     <a class="twitter-timeline" href="https://twitter.com/ManuKaul1?ref_src=twsrc%5Etfw">Tweets by ManuKaul1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
+  </div> -->
   
   </div>
   <!-- Footer -->

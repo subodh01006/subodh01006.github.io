@@ -1,10 +1,19 @@
-<div class="news">
+<style>
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+  
+</style>
+
+<div class="news" style="margin-top: 30px;">
   <h2 style="font-weight: bold;">News</h2>
   {% if site.news  %}
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
+    <div class="table-responsive" style="margin-top: -20px;">
+      <table class="table table-borderless">
       {% assign news = site.news | reverse %}
       {% for item in news limit: site.news_limit %}
+      
         <tr>
           <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
           <td>
@@ -15,6 +24,7 @@
             {% endif %}
           </td>
         </tr>
+          
       {% endfor %}
       </table>
     </div>
