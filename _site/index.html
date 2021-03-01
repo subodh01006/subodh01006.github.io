@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="shortcut icon" href="#">
 
+      <!-- adding extra ling from luca -->
+
+      <link rel="stylesheet" id="bootstrap-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css" media="all">
+  
+    <!-- added extra link from luca -->
+
     <style id="fac_custom_options">
         #blog-content,
         #archive-content,
@@ -24,7 +30,20 @@
             overflow: auto;
             overflow-x: hidden;
         }
+        .hide{
+        display: none;
+        }
+        .show{
+        display: block !important;
+        }
     </style>
+
+    <script>
+        function togg(id) {
+        var element = document.getElementById(id);
+        element.classList.toggle("show");
+        }
+    </script>
 
 <body>
 
@@ -145,21 +164,24 @@
   <p class="desc" style="margin-left: 120px;margin-top: -15;" ></p>
 </div>
 <div class="row" style="margin-top: -40px;">
-  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 50px;">
-  <div class="main_photo"><img style="margin-top: 18px; margin-right: 15px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
+  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 0px;">
+  <div class="main_photo">
+    <img style="margin-top: 80px; margin-right: 15px;margin-left: 80px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
   </div>
-  <div style="margin:-1px"><p style="text-align:justify">
+  <div style="margin:80px;width: 680px;"><p style="text-align:justify">
+
 I am an assistant professor in the <a href="https://cse.iith.ac.in/">Department of Computer Science and Engineering (CSE)</a> at the <a href="https://iith.ac.in/">Indian Institute of Technology, Hyderabad (IIT-H)</a>, where I head the <a href="https://T0kudai.github.io"> क्रम (Krama) Lab</a>. My research interests are geometric machine learning (graph and point-cloud representation learning), optimal transport (discrete OT and assignment problems) and applied algebraic topology (topological data analysis). My work involves developing practical machine learning algorithms with rigorous theoretical foundations. 
 <br /><br />
 Prior to my faculty position at IIT-H, I was a postdoctoral researcher at <a href="https://www.dima.tu-berlin.de/menue/database_systems_and_information_management_group/?no_cache=1">DIMA</a>, <a href="https://www.tu.berlin/en/">Technische Universität (TU) Berlin, Germany, headed by <a href="https://www.bimos.tu-berlin.de/menue/bimos_people/members/professors/volker_markl/">Prof. Volker Markl</a>, investigating scalable machine learning methods, especially, locality sensitive hashing (LSH). Before that I was a Ph.D. student in the <a href="https://cs.au.dk/">Computer Science Department</a> at <a href="https://international.au.dk/">Aarhus University, Denmark</a>, where I was working on fast and approximate path-finding algorithms on massive 3D polyhedral meshes, under the guidance of <a href="https://vbn.aau.dk/en/persons/christian-s-jensen">Prof. Christian S. Jensen.</a> Prior to that, I was a Masters student and researcher in the <a href="http://www.it.uu.se/research/group/udbl/">Uppsala database laboratory (UDBL)</a> headed by <a href="http://user.it.uu.se/~torer/">Prof. Tore Risch</a> at the <a href="http://www.it.uu.se/?lang=en">Department of Information Technology</a>  in <a href="https://www.uu.se/en">Uppsala University, Sweden</a>, where I investigated the near-future prediction of continuously evolving moving-object trajectories.   
 <br /><br />
 Further information about how to join us at the क्रम (Krama) Lab can be found <a href="https://T0kudai.github.io">here
+
 </a>.
 </a></p>
 </div>
   <p>&nbsp;</p>
 
-  <div class="news" style="margin-top:-30px;margin-left:0px;">
+  <div class="news" style="margin-top:-80px;margin-left:0px;">
     
     <style>
 table {
@@ -169,7 +191,7 @@ table {
   
 </style>
 
-<div class="news" style="margin-top: 30px;">
+<div class="news" style="margin-top: 30px;width: 680px;margin-left: 72px;">
   <h2 style="font-weight: bold;">News</h2>
   
     <div class="table-responsive" style="margin-top: -20px;">
@@ -182,10 +204,10 @@ table {
           <td>
             
               <style>
-    .draw_bottomline{
+    /* .draw_bottomline{
         border-bottom: 1px solid #ccc;
     }
-    
+     */
 </style>
 
 <div class="draw_bottomline">
@@ -207,10 +229,10 @@ table {
           <td>
             
               <style>
-    .draw_bottomline{
+    /* .draw_bottomline{
         border-bottom: 1px solid #ccc;
     }
-    
+     */
 </style>
 
 <div class="draw_bottomline">
@@ -229,9 +251,9 @@ table {
           <td>
             
               <style>
-    .draw_bottomline{
+    /* .draw_bottomline{
         border-bottom: 1px solid #ccc;
-    }
+    } */
     
 </style>
 
@@ -251,38 +273,15 @@ table {
           <td>
             
               <style>
-    .draw_bottomline{
+    /* .draw_bottomline{
         border-bottom: 1px solid #ccc;
     }
-    
+     */
 </style>
 
 <div class="draw_bottomline">
 <span style="color:red">Congratulations Charu !</span> Our paper titled 
 <a href="https://arxiv.org/pdf/2007.02381.pdf" target="blank"><i>"Simplicial Complex based Point Correspondence between Images warped onto Manifolds"</i></a> accepted at <b>ECCV 2020</b>
-
-</div>
-
-            
-          </td>
-        </tr>
-          
-      
-      
-        <tr>
-          <th scope="row">Mar 21, 2020</th>
-          <td>
-            
-              <style>
-    .draw_bottomline{
-        border-bottom: 1px solid #ccc;
-    }
-    
-</style>
-
-<div class="draw_bottomline">
-<span style="color:red">Congratulations Charu and Jatin !</span> Our paper titled 
-<a href="https://arxiv.org/pdf/2005.09752.pdf" target="blank"><i>"Learning Representations using Spectral-Biased Random Walks on Graphs"</i></a> accepted at <b>IJCNN 2020</b>
 
 </div>
 
@@ -329,7 +328,6 @@ table {
                             </div>
                         </div>
                     </div>
-
                     <div class="wpb_column vc_column_container vc_col-sm-4"
                         style="background-color:#ffffff;margin-top: -30px;">
                         <div class="vc_column-inner ">

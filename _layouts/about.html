@@ -13,13 +13,14 @@ layout: homepage
   <p class="desc" style="margin-left: 120px;margin-top: -15;" >{{ page.description }}</p>
 </div>
 <div class="row" style="margin-top: -40px;">
-  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 50px;">
-  <div class="main_photo"><img style="margin-top: 18px; margin-right: 15px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
+  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 0px;">
+  <div class="main_photo">
+    <img style="margin-top: 80px; margin-right: 15px;margin-left: 80px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
   </div>
-  <div style="margin:-1px">{{content}}</div>
+  <div style="margin:80px;width: 680px;">{{content}}</div>
   <p>&nbsp;</p>
 
-  <div class="news" style="margin-top:-30px;margin-left:0px;">
+  <div class="news" style="margin-top:-80px;margin-left:0px;">
     {% if page.news %}
     {% include news.html %}
     {% endif %}

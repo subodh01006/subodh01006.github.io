@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="shortcut icon" href="#">
 
+      <!-- adding extra ling from luca -->
+
+      <link rel="stylesheet" id="bootstrap-style-css" href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css" media="all">
+  
+    <!-- added extra link from luca -->
+
     <style id="fac_custom_options">
         #blog-content,
         #archive-content,
@@ -24,7 +30,20 @@
             overflow: auto;
             overflow-x: hidden;
         }
+        .hide{
+        display: none;
+        }
+        .show{
+        display: block !important;
+        }
     </style>
+
+    <script>
+        function togg(id) {
+        var element = document.getElementById(id);
+        element.classList.toggle("show");
+        }
+    </script>
 
 <body>
 
@@ -41,14 +60,16 @@
                         </div>
                         <div class="title">
                             <h2>Manohar Kaul</h2>
-                            <h3>Assistant Professor, <a style="color:cornflowerblue" href="https://cse.iith.ac.in/"
-                                    target="blank">Department of Computer Science and Engineering</a>, <a
-                                    style="color:cornflowerblue" href="https://iith.ac.in/" target="blank">IIT</a></h3>
+                            <h3>Assistant Professor,</head>
+                            </h3>
+                            <h3><a style="color:cornflowerblue" href="https://cse.iith.ac.in/" target="blank">Department
+                                    of Computer Science and Engineering</a>,<br><a style="color:cornflowerblue"
+                                    href="https://iith.ac.in/" target="blank">IIT Hyderabad</a></h3>
                         </div>
                     </div>
                     <!-- /Profile/logo section-->
 
-                    <!-- Main navigation-->
+                    <!-- Main navigation--->
                     <div id="main-nav" style="padding-bottom: 118px;">
 
                         <ul id="navigation" class="">
@@ -111,8 +132,7 @@
     </div>
     <div id="main" style="display: block; left: 250px; right: 0px;" class="sideIn">
         <div class="fac-page home" style="background-color:#f7f7f7">
-            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank"
-                    class="twitter-share-button">Tweet</a></div>-->
+            <!-- <div class="tweeticon"><a href="https://twitter.com/share" target="blank" class="twitter-share-button">Tweet</a></div>  -->
             <div id="inside">
                 <div class="twitter-share"><iframe id="twitter-widget-1" scrolling="no" allowtransparency="true"
                         allowfullscreen="true"
@@ -129,25 +149,25 @@
                                             <div class="wpb_wrapper" style="margin-left: -110px;">
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper"
-                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px; ">
-                                                        <p>
+                                                        style="background-color:#ffffff;margin-top: -50px;margin-left: 50px;">
+                                                        <p style="text-align:justify">
                                                             <!-- <img loading="lazy" class="alignleft wp-image-876" src="/assets/img/mkaul_corpped_.jpg" alt="" sizes="(max-width: 250px) 100vw, 250px" width="230" height="300"> -->
-                                                            <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div> 
+                                                            <!-- <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>  -->
 <div class="post" style="margin-left:50px;">
   <div style="margin:50px;">
-  <header class="post-header">
-    <h1 class="post-title" style="font-weight: bold;">Talks</h1>
-    <!-- <p class="post-description">Talks</p> -->
-  </header>
+    <header class="post-header">
+      <!-- <h1 class="post-title" style="font-weight: bold;">Talks</h1> -->
+      <!-- <p class="post-description">Talks</p> -->
+    </header>
 
-  <style>
-    li{
-      list-style-type: none;
-    }
-  </style>
-
-  <article>
     <style>
+      li {
+        list-style-type: none;
+      }
+    </style>
+
+    <article>
+      <style>
 .year{
 color: #4b4b4b;
 font-size: 30px;
@@ -175,22 +195,24 @@ font-weight: 300;
   <h2 class="year">2020</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -200,17 +222,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="TDAAB" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="TDAAB" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank">Invited Speaker at <b>Topological Data Analysis and Beyond</b> Workshop at NeurIPS 2020 (virtual) <a href="https://bit.ly/3b7ZEBR"></a><em style="color:red">Talk</em></a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2020</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -222,44 +260,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2019</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -269,17 +310,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="spapurcc" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="spapurcc" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Solving Partial Assignment Problems using Random Clique Complexes</b> at Computational Topology Workshop, Dalian University of Technology and in Hebei Normal University, China. </a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2019</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -291,42 +348,45 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li>
+</div> -->
+      <!-- </div> --></li>
 <li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -336,17 +396,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="ogkae" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="ogkae" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>On Graph Kernels and Embeddings</b> at Computational Topology Workshop, Dalian University of Technology and in Hebei Normal University, China.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2019</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -358,44 +434,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2018</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -405,17 +484,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="spa" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="spa" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Solving Partial Assignment Problems using Random Clique Complexes</b> at Topology Seminar, Shinshu University, Japan. </a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2018</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -427,44 +522,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2017</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -474,17 +572,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="wugat" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="wugat" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Works using Geometry and Algebraic Topology</b> at IBM Research, New Delhi, India.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2017</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -496,44 +610,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2016</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -543,17 +660,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="nlaudb" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="nlaudb" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>New Lower and Upper Distance Bounds for Shortest Distance Queries on Terrains</b> at VLDB 2016, New Delhi, India.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2016</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -565,42 +698,45 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li>
+</div> -->
+      <!-- </div> --></li>
 <li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -610,17 +746,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="mod" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="mod" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Moving Object Databases</b> at Big Data Workshop held at IIT Mandi, India.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2016</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -632,44 +784,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2015</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -679,17 +834,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="dbsq" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="dbsq" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Distance Bounds for Spatial Queries on Polyhedral Surfaces</b> at Department of Computer Science and Engineering, IIT Bombay, India</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2015</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -701,42 +872,45 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li>
+</div> -->
+      <!-- </div> --></li>
 <li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -746,17 +920,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="smll" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="smll" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Scalable Machine Learning Library Related Research</b> at Amazon, Berlin, Germany.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2015</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -768,44 +958,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2014</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -815,17 +1008,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="fbdb" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="fbdb" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Finding Better Distance Bounds for Shortest Surface Paths on 3D Terrains</b> at Department of Computer Science and Engineering, Chalmers University of Technology, Sweden.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2014</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -837,44 +1046,47 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
   </div>
-</div>
-</li></ol>
+</div> -->
+      <!-- </div> --></li></ol>
 
   <h2 class="year">2013</h2>
   <ol class="bibliography"><li><style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -884,17 +1096,33 @@ font-weight: 300;
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="ba3d" class="col-sm-8">
+  <div class="">
     
+  </div>
+  
+  <div id="ba3d" class="col-sm-12">
+    <!--  -->
+    <table>
+    <tr><td>
+    
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="" target="_blank"><b>Building Accurate 3D Spatial Networks to Enable Next Generation Intelligent Transportation Systems</b> at IEEE International Conference on Mobile Data Management (MDM) 2013, Milan, Italy.</a></div>
-      <div class="venue"><a href="" target="_blank"></a>, <em>2013</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank"></a></div>
+      <div class="author"></div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       
@@ -906,33 +1134,33 @@ font-weight: 300;
       </div>
      -->
 
-    <div class="links">
+      <!-- <div class="links">
+    
+    
+     -->
+      <!--  -->
+      <!-- 
     
     
     
-    <!--  -->
     
     
-    
-    
-    
-    
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!--  -->
+      <!-- Hidden abstract block -->
+      <!--  -->
+      <!-- </div>
+  </div>
+</div> -->
+      <!-- </div> --></li></ol>
+
+
+</div>
+
+
+    </article>
   </div>
 </div>
-</li></ol>
-
-
-</div>
-
-
-  </article>
-</div>
-</div>
-
                                                         </p>
                                                     </div>
                                                 </div>
@@ -943,8 +1171,8 @@ font-weight: 300;
                             </div>
                         </div>
                     </div>
+                    
 
-                    <!--  <div class="wpb_column vc_column_container vc_col-sm-4" style="background-color:#ffffff;margin-top: -30px;"><div class="vc_column-inner "><div class="wpb_wrapper"> -->
+</body>
 
-    </body>
-    </html>
+</html>

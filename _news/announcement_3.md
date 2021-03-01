@@ -6,9 +6,9 @@ inline: true
 
 
 <style>
-    .draw_bottomline{
+    /* .draw_bottomline{
         border-bottom: 1px solid #ccc;
-    }
+    } */
     
 </style>
 

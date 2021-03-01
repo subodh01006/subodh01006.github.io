@@ -2,22 +2,24 @@
 ---
 <style>
   .button5 {
-  background-color: rgb(223, 217, 217);
-  color: black;
-  border: 1px solid #555555;
-  border-radius: 15px;
-}
+    background-color: rgb(223, 217, 217);
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 15px;
+  }
 
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
-.hide{
-  display: none;
-}
-.show{
-  display: block !important;
-}
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block !important;
+  }
 </style>
 <script>
   function togg(id) {
@@ -27,23 +29,42 @@
 </script>
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
+  <div class="">
+    {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
     {% else %}
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
-  {% endif %}
+    {% endif %}
   </div>
-
-  <div id="{{entry.key}}" class="col-sm-8">
-    {% if entry.type == "thesis" %}
-      {{reference}}
-    {% else %}
+  
+  <div id="{{entry.key}}" class="col-sm-12">
+    <!-- {% if entry.type == "thesis" %}
+    {{reference}}
+    {% else %} -->
+    <table>
+    <tr><td>
+    {% if entry.image %}
+    <!-- <div class="align_horizontal"> -->
+    <div class="" style="float:left"><img src="{{entry.image}}" style="width:150px;height:100px;"></div>
+    {% endif %}
+  </td>
+  <td>
+    <li>
+    <div style="float:center">
       <div class="title"><a href="{{ entry.pdf }}" target="_blank">{{entry.title}}</a></div>
-      <div class="venue"><a href="" target="_blank">{{entry.journal}}</a>, <em>{{entry.year}}</em></div>
-      <div class="author">
+      <div class="venue"><a href="" target="_blank">{{entry.journal}}</a></div>
+      <div class="author">{{entry.author}}</div>
+     </div>
+    </li>  <!--float-->
+    </td></tr></table>
+  </div>    <!--col-sm-12-->
+
+</div> <!--row-->
+
+
+      <!-- <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
           {% if author.last == site.scholar.last_name%}
@@ -91,7 +112,7 @@
             {% endunless %}
           {% endif %}
         {% endfor %}
-      </div>
+      </div> -->
 
       <!-- <div class="periodical">
       {% if entry.type == "article" %}
@@ -105,27 +126,27 @@
       </div>
     {% endif %} -->
 
-    <div class="links">
+      <!-- <div class="links">
     {% if entry.abstract %}
     <a href="javascript:void(0)" onclick="togg({{entry.id}})" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Abstract]</a>
     
       <a href="javascript:void(0)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
-      <div class="hide" id="{{entry.id}}" style="font-weight:bold">{{entry.abstract}}</div>
+      <div class="hide" id="{{entry.id}}"><br><br>{{entry.abstract}}</div>
       {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
     {% endif %}
     {% if entry.html %}
       <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
-    {% endif %}
-    <!-- {% if entry.pdf %}
+    {% endif %} -->
+      <!-- {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
       <a href="{{ entry.pdf | relative_url}}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
     {% endif %} -->
-    {% if entry.supp %}
+      <!-- {% if entry.supp %}
       {% if entry.supp contains '://' %}
       <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Supp</a>
       {% else %}
@@ -155,13 +176,15 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
     {% endif %}
-    </div>
+    </div> -->
 
-    <!-- Hidden abstract block -->
-    <!-- {% if entry.abstract %}
+      <!-- Hidden abstract block -->
+      <!-- {% if entry.abstract %}
     <div class="abstract hidden">
       <p>{{ entry.abstract }}</p>
     </div>
     {% endif %} -->
+      <!-- </div>
   </div>
-</div>
+</div> -->
+      <!-- </div> -->
