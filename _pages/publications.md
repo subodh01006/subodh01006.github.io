@@ -46,7 +46,7 @@ font-weight: 300;
 <div class="Selected Publications">
   
   <h2 class="year">Selected Publication</h2>
-    <div>
+    <div style="margin-top:-30">
       {% for y in page.selected %}
       {% bibliography -f selectedPublications -q @*[year={{y}}]* %}
       {% endfor %}
@@ -61,7 +61,7 @@ font-weight: 300;
   <tr>
   <td>
   <h2 class="year_pub">2021  </h2>
-    <div>
+    <div style="margin-top:-30">
       {% for y in page.year21 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}
@@ -71,7 +71,7 @@ font-weight: 300;
   <tr>
   <td>
   <h2 class="year_pub">2016-2020</h2>
-    <div>
+    <div style="margin-top:-30">
       {% for y in page.year16 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}
@@ -81,7 +81,7 @@ font-weight: 300;
   <tr>
   <td>
   <h2 class="year_pub">2011-2015  </h2>
-    <div>
+    <div style="margin-top:-30">
       {% for y in page.year11 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}
@@ -91,7 +91,7 @@ font-weight: 300;
   <tr>
   <td>
   <h2 class="year_pub">2003-2010  </h2>
-    <div>
+    <div style="margin-top:-30">
       {% for y in page.year03 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}

@@ -55,10 +55,47 @@
     <div style="float:center">
       <div class="title"><a href="{{ entry.pdf }}" target="_blank">{{entry.title}}</a></div>
       <div class="venue"><a href="" target="_blank">{{entry.journal}}</a></div>
-      <div class="author">{{entry.author}}</div>
+      <div class="author">{{entry.authors}}</div>
+      <div class="links">
+        {% if entry.abstract %}
+        <a href="javascript:void(0)" onclick="togg({{entry.id}})" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Abstract]</a>
+        
+          <a href="javascript:void(0)" onclick="togg({{entry.idk}})" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
+          
+          {% endif %}
+        {% if entry.blog %}
+        <a href="{{entry.blog}}" target="blank" id="papercite_0" class="article" style="color:rgb(156, 79, 79)">[Article]</a>
+        {% endif %}
+        {% if entry.code %}
+        <a href="{{entry.code}}" target="blank" id="papercite_0" class="article" style="color:rgb(156, 79, 79)">[code]</a>
+        {% endif %}
+      </div>
+
      </div>
     </li>  <!--float-->
-    </td></tr></table>
+    </td>
+  </tr>
+     
+  </table>
+  <table>
+    <tr>
+      <div class="hide" id="{{entry.id}}"><br>{{entry.abstract}}</div>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <div class="hide" id="{{entry.idk}}"><br><p>
+        @misc{<br>
+          title={{entry.title}}<br>
+          authors = {{entry.authors}}<br>
+          year={{entry.year}}<br>
+          pdf={{entry.pdf}} <br>
+          journal={{entry.journal}}<br>
+        }
+
+      </p></div>
+    </tr>
+  </table>
   </div>    <!--col-sm-12-->
 
 </div> <!--row-->
@@ -132,8 +169,8 @@
     
       <a href="javascript:void(0)" id="papercite_0" class="papercite_toggle" style="color:rgb(156, 79, 79)">[Bibtex]</a>
       <div class="hide" id="{{entry.id}}"><br><br>{{entry.abstract}}</div>
-      {% endif %}
-    {% if entry.arxiv %}
+      {% endif %} -->
+    <!-- {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
     {% endif %}
     {% if entry.html %}
@@ -145,7 +182,7 @@
       {% else %}
       <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
-    {% endif %} -->
+    {% endif %} --> 
       <!-- {% if entry.supp %}
       {% if entry.supp contains '://' %}
       <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Supp</a>
@@ -176,7 +213,7 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
     {% endif %}
-    </div> -->
+    </div>-->
 
       <!-- Hidden abstract block -->
       <!-- {% if entry.abstract %}
