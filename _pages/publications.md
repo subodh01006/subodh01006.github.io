@@ -56,7 +56,7 @@ font-weight: 300;
   
 
 <div class="publications" style="padding-top: 20px;">
-  <h2 class="year">Publications</h2>
+  <h2 class="year">All Publications</h2>
 <table>
   <tr>
   <td>
