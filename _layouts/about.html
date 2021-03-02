@@ -1,37 +1,51 @@
 ---
 layout: homepage
 ---
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- <div class="tweeticon"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>  -->
 <div class="post-header">
-  <h1 class="post-title">
+  <!-- <h1 class="post-title">
     {% if site.title == blank %}{{ site.title }}{% else %}
     <div style="margin-left: 50px;">
-    <span class="font-weight-bold" style="font-weight: bold;">{{ site.first_name }}</span>
-    {{ site.middle_name }} {{ site.last_name }}{% endif %}
+      <span class="font-weight-bold" style="font-weight: bold;">{{ site.first_name }}</span>
+      {{ site.middle_name }} {{ site.last_name }}{% endif %}
     </div>
-  </h1>
-  <p class="desc" style="margin-left: 120px;margin-top: -15;" >{{ page.description }}</p>
+  </h1> -->
+  <p class="desc">{{ page.description }}</p>
 </div>
-<div class="row" style="margin-top: -40px;">
-  <div class="col-sm-8" style="padding:70px; margin-top: -90px;padding-left: 0px;">
-  <div class="main_photo">
-    <img style="margin-top: 70px; margin-right: 15px;margin-left: 80px;" loading="lazy" class="alignleft align_content"  src="/assets/img/mkaul_corpped_.jpg" alt=""  sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
-  </div>
-  <div style="margin:80px;width: 800px;margin-top: 63px;">{{content}}</div>
-  <p>&nbsp;</p>
-
-  <div class="news" style="margin-top:-80px;margin-left:0px;">
-    {% if page.news %}
-    {% include news.html %}
-    {% endif %}
+<div class="row">
+  <div class="col-md-12 width-100% mx-0">
+    <div class="main_photo">
+      <div>
+        <img style="float: left; margin: 20px; margin-top: 5px; margin-left: 12px;" 
+        loading="lazy" class="alignleft align_content" src="/assets/img/mkaul_corpped_.jpg" alt=""
+          sizes="(max-width: 250px) 100vw, 250px" width="200" height="250">
+      </div>
+      <p style="margin:80px;margin-top: 63px;">{{content}}</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="news mt-2" style="margin-left:-74px;">
+      {% if page.news %}
+      {% include news.html %}
+      {% endif %}
     </div>
   </div>
   <!-- <div class="col-sm-4" style="margin-top:45px;">
     <div style="margin-right: 130px; overflow:scroll; height:80vh;">
     <a class="twitter-timeline" href="https://twitter.com/ManuKaul1?ref_src=twsrc%5Etfw">Tweets by ManuKaul1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div> -->
-  
-  </div>
-  <!-- Footer -->
+
+</div>
+<!-- Footer -->
 <!-- <div style="background-color:chartreuse; float:center; margin-right: -400px;">{% include footer.html %}</div> -->
-  
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>

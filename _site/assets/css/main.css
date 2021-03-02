@@ -28,8 +28,6 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
 .align_content { margin: 50; margin-right: 15px; }
 
-.row { width: 80%; display: inline-block; }
-
 .main_home { background-color: yellowgreen; }
 
 .tweeticon { position: fixed; top: 0px; margin-left: -50px; }
