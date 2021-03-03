@@ -26,7 +26,7 @@ font-family: "Lato", Helvetica, Arial, sans-serif;
 font-weight: 300;
 }
 .row{
-  padding: 10px;
+  /* padding: 10px; */
   font-size:16px;
 }
 
@@ -85,7 +85,7 @@ font-weight: 300;
       {% for y in page.year11 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}
-    </div>
+    </div>http://svmiller.com/about/
    </td> 
   </tr>  
   <tr>

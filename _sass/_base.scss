@@ -146,7 +146,7 @@ a, table.table a {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  // font-size: 0.875rem;
   a {
     color: inherit;
     &:hover {
@@ -325,7 +325,7 @@ footer.sticky-bottom {
     padding-bottom: 2rem;
     .post-meta {
       color: $grey-color;
-      font-size: 0.875rem;
+      // font-size: 0.875rem;
       margin-bottom: 0;
     }
     a {
@@ -392,16 +392,16 @@ footer.sticky-bottom {
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    // font-size: 2rem;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
   h2 {
     margin-bottom: 1rem;
-    span {
-      font-size: 1.5rem;
-    }
+    // span {
+    //   font-size: 1.5rem;
+    // }
   }
   h2.year {
     color: $grey-color-light;
