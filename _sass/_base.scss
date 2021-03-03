@@ -78,10 +78,10 @@
 
 //twitter-timeline
 
-.tweet{
-  overflow-x:scroll;
-  height:80vh;
-}
+// .tweet{
+//   overflow-x:scroll;
+//   height:80vh;
+// }
 
 // Typography
 
@@ -135,14 +135,14 @@ a, table.table a {
   }
 }
 
-@media (min-width: 576px) {
-  .profile {
-    width: 30%;
-    .address {
-      p { display: block; }
-    }
-  }
-}
+// @media (min-width: 576px) {
+//   .profile {
+//     width: 30%;
+//     .address {
+//       p { display: block; }
+//     }
+//   }
+// }
 
 .post-description {
   margin-bottom: 2rem;

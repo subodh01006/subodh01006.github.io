@@ -27,7 +27,7 @@ font-weight: 300;
 }
 .row{
   padding: 10px;
-  font-size:15px;
+  font-size:16px;
 }
 
 .year_pub{

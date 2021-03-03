@@ -35,7 +35,7 @@ font-weight: 300;
 
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f teaching -q @*[{{page.title}}]* %}
+  {% bibliography -f teaching -q @*[year={{}}]* %}
 {% endfor %}
 
 </div>
