@@ -1,5 +1,13 @@
 @inproceedings{ TDAAB,
-title={};
-content={Invited Speaker at <b>Topological Data Analysis and Beyond</b> Workshop at NeurIPS 2020 (virtual) <a href="https://bit.ly/3b7ZEBR">Talk</a>},
-year={2020},
+title={ID1303 	Introduction to Programming};
+content={Introduction to C and C++ programming. Problem solving and algorithms. Input and output operations, decision control structure, loop control structure, arrays, strings, etc. Pointers, arrays, structures, functions, file operations, classes, object oriented programming. Lab is also included in this course.},
+year={2020 : ID1303 Introduction to Programming},
+}
+
+
+
+@inproceedings{ TDAAB,
+title={ID1303 	Introduction to Programming};
+content={Introduction to C and C++ programming. Problem solving and algorithms. Input and output operations, decision control structure, loop control structure, arrays, strings, etc. Pointers, arrays, structures, functions, file operations, classes, object oriented programming. Lab is also included in this course.},
+year={2020 : ID1303 Introduction to Programming},
 }
