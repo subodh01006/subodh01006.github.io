@@ -14,7 +14,7 @@ profile:
     padding-right: 15px;
     padding:5px;
   }
-  th{
+  /* th{
     background: #A0A0A0;
     color: #fff;
     text-align: left;
@@ -22,7 +22,7 @@ profile:
     padding:10px;
     
 
-  }
+  } */
   tr{
     margin: 0;
     padding: 0;
@@ -31,10 +31,10 @@ profile:
     vertical-align: baseline;
     border-radius: 5px;
   }
-  thead{
+  /* thead{
     background: #444;
     color: #fff;
-  }
+  } */
   table{
     width: 100%;
     max-width: 100%;

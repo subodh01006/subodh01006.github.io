@@ -35,7 +35,7 @@
   journal={European Conference on Computer Vision (ECCV)},
   year={2020},
   pdf={https://arxiv.org/pdf/2007.02381.pdf},
-  image={/assets/img/sharma2020simplicial.webp},
+  image={/assets/img/sc1.png},
   blog={https://medium.com/@charusharma1991/simplicial-complex-based-point-correspondence-between-images-warped-onto-manifolds-a8c541d2398f},
   code={https://github.com/charusharma1991/PointCorrespondence},
 

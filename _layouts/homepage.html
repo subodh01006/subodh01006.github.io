@@ -91,6 +91,15 @@
         .ml-4{
             margin-left: 3.5rem !important;
         } */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
 
 
@@ -138,14 +147,18 @@
                                 <!-- /Profile/logo section-->
 
                                 <!-- Main navigation--->
-                                <div class="mt-5">
+                                <div class="mt-5 sidenav">
                                     <a href="{{ '/' | relative_url }}"><i class="fa fa-fw fa-home"></i> Home</a>
-                                    <a href="{{ site.baseurl }}{% link _pages/publications.md %}"><i class="fa fa-mortar-board"></i> Publications</a>
+                                    <a href="{{ site.baseurl }}{% link _pages/publications.md %}"><i
+                                            class="fa fa-mortar-board"></i> Publications</a>
                                     <a href="#Awards"><i class="fa fa-trophy"></i> Awards/Honours</a>
-                                    <a href="{{ site.baseurl }}{% link _pages/talks.md %}"><i class="fa fa-video-camera"></i> Talks</a>
-                                    <a href="{{ site.baseurl }}{% link _pages/teaching.md %}"><i class="fa fa-newspaper-o"></i> Teaching</a>
+                                    <a href="{{ site.baseurl }}{% link _pages/talks.md %}"><i
+                                            class="fa fa-video-camera"></i> Talks</a>
+                                    <a href="{{ site.baseurl }}{% link _pages/teaching.md %}"><i
+                                            class="fa fa-newspaper-o"></i> Teaching</a>
                                     <a href=""><i class="fa fa-briefcase"></i> Services</a>
-                                    <a href="https://t0kudai.github.io/" target="blank"><i class="fa fa-video-camera"></i> क्रम (Krama) Lab</a>
+                                    <a href="https://t0kudai.github.io/" target="blank"><i
+                                            class="fa fa-video-camera"></i> क्रम (Krama) Lab</a>
 
 
                                     <!-- <ul id="navigation">
