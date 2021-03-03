@@ -85,7 +85,7 @@ font-weight: 300;
       {% for y in page.year11 %}
       {% bibliography -f papers -q @*[year={{y}}]* %}
       {% endfor %}
-    </div>http://svmiller.com/about/
+    </div>
    </td> 
   </tr>  
   <tr>

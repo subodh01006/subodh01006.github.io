@@ -51,6 +51,8 @@
 
         .sidebar {
             height: 100%;
+            width: 15%;
+            position: fixed;
             z-index: 1;
             top: 0;
             left: 0;
@@ -75,7 +77,15 @@
             display: block;
             margin: 0 auto;
         }
+        .col-lg-2{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
+        .col-md-3{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
         /* .ml-5{
             margin-left: 5rem !important;
         }
@@ -102,11 +112,11 @@
     class="home page-template page-template-page-pagebuilder page-template-page-pagebuilder-php page page-id-10 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-3 d-none d-lg-block" style="height:100vh">
+            <div class="col-lg-2 col-md-3 d-none d-lg-block" style="height:100vh; padding-right:0px">
                 <div id="main-nav" class="sidebar" style="padding-bottom: 118px;">
                     <a onclick="myFunction()" href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
                     <div class="" id="sidebar" style="left: 0px;">
-                        <div id="sidebar-wrapper" tabindex="0">
+                        <div id="sidebar-sticky" tabindex="0">
                             <div id="sidebar-inner">
                                 <!-- Profile/logo section-->
                                 <div id="profile" class="clearfix">

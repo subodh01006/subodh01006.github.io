@@ -10,21 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" id="xr-styles-css"
-        href="https://lucacarlone.mit.edu/wp-content/themes/faculty-child/style.css?ver=5.5.3" type="text/css"
-        media="all">
-    <link rel="stylesheet" id="js_composer_front-css"
-        href="https://lucacarlone.mit.edu/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.1.1"
-        type="text/css" media="all"> -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="shortcut icon" href="#">
 
     <!-- adding extra ling from luca -->
-
-    <!-- <link rel="stylesheet" id="bootstrap-style-css"
-        href="https://lucacarlone.mit.edu/wp-content/themes/faculty/css/bootstrap.css?ver=5.5.3" type="text/css"
-        media="all"> -->
 
     <!-- added extra link from luca -->
 
@@ -60,6 +51,8 @@
 
         .sidebar {
             height: 100%;
+            width: 15%;
+            position: fixed;
             z-index: 1;
             top: 0;
             left: 0;
@@ -84,13 +77,30 @@
             display: block;
             margin: 0 auto;
         }
+        .col-lg-2{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
+        .col-md-3{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
         /* .ml-5{
             margin-left: 5rem !important;
         }
         .ml-4{
             margin-left: 3.5rem !important;
         } */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
 
 
@@ -98,15 +108,15 @@
 
 
 
-<body style="font-family: 'Lato', sans-serif;font-size: 16 !important;"
+<body style="font-family: 'Lato', sans-serif;font-size: 16"
     class="home page-template page-template-page-pagebuilder page-template-page-pagebuilder-php page page-id-10 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-3 d-none d-lg-block" style="height: 100vh">
+            <div class="col-lg-2 col-md-3 d-none d-lg-block" style="height:100vh; padding-right:0px">
                 <div id="main-nav" class="sidebar" style="padding-bottom: 118px;">
                     <a onclick="myFunction()" href="#sidebar" class="mobilemenu"><i class="fa fa-bars"></i></a>
                     <div class="" id="sidebar" style="left: 0px;">
-                        <div id="sidebar-wrapper" tabindex="0">
+                        <div id="sidebar-sticky" tabindex="0">
                             <div id="sidebar-inner">
                                 <!-- Profile/logo section-->
                                 <div id="profile" class="clearfix">
@@ -138,7 +148,7 @@
                                 <!-- /Profile/logo section-->
 
                                 <!-- Main navigation--->
-                                <div class="mt-5">
+                                <div class="mt-5 sidenav">
                                     <a href="/"><i class="fa fa-fw fa-home" style="font-size: 1.5em;">
                                     </i><span style="padding:12px;">Home</span></a>
                                     <a href="/publications/"><i
@@ -269,6 +279,14 @@
                     </p>
                 </div>
             </div>
+            <!-- Twitter -->
+            <!-- <div class="col-lg-2 col-md-2" style="float:right; margin-top:86px;">
+                <div style="overflow-x: hidden;width:100%; height:80vh;">
+                    <a class="twitter-timeline" href="https://twitter.com/ManuKaul1?ref_src=twsrc%5Etfw">Tweets
+                        by ManuKaul1</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div> -->
 
 
         </div>
